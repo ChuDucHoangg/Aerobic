@@ -4,5 +4,7 @@ import {Component} from "@angular/core";
   templateUrl:'book.component.html'
 })
 export  class BookComponent{
-
+  onactive() {
+    window.scroll(0,0)
+  }
 }

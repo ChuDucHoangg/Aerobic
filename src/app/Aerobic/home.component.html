@@ -6,11 +6,11 @@
       </a>
       <nav>
         <ul id="main-menu">
-          <li><a routerLink="/class">New Classes</a></li>
-          <li><a routerLink="/teacher">Teachers</a></li>
-          <li><a routerLink="/book">Book</a></li>
-          <li><a routerLink="/course">Course</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
+          <li><a routerLink="/class" (click)="onactive()">New Classes</a></li>
+          <li><a routerLink="/teacher" (click)="onactive()">Teachers</a></li>
+          <li><a routerLink="/book" (click)="onactive()">Book</a></li>
+          <li><a routerLink="/course" (click)="onactive()">Course</a></li>
+          <li><a routerLink="/contact" (click)="onactive()">Contact</a></li>
         </ul>
 
       </nav>
@@ -26,11 +26,280 @@
     </div>
   </header>
   <div id="banner">
-    <img id="tenta" src="https://png.pngtree.com/background/20210711/original/pngtree-color-silhouette-aerobics-training-competition-poster-background-material-picture-image_1130476.jpg?fbclid=IwAR3srOKTIoGKtIj9NNoGdTXLo4QfgXHinIstIzw7UBFXRvJcCNbVkkaBdkQ" width="100%" height="600px" alt="">
+    <img id="tenta" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/73674f80778075.5ceb8de9562bc.jpg" width="100%" height="600px" alt="">
   </div>
   <div id="content" class="container">
 
+    <div class="title-class">
+      <h1 class="h1-title">Work Hard For A Better Life</h1>
+      <button class="button-class" style="font-family: 'Catamaran', sans-serif;"><a routerLink="/class">GET STARTED</a></button>
+    </div>
+
+    <div class="content-home">
+      <div class="box-why">
+        <div class="box-why-img">
+          <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/gym.png">
+        </div>
+        <div class="box-why-p">
+          <p>Aerobic & Fitness</p>
+        </div>
+      </div>
+      <div class="box-why-1">
+        <div class="box-why-img">
+          <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/nutration.png">
+        </div>
+        <div class="box-why-p">
+          <p>Nutration Plan</p>
+        </div>
+      </div>
+      <div class="box-why-2">
+        <div class="box-why-img">
+          <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/yoga.png">
+        </div>
+        <div class="box-why-p">
+          <p>Meditation</p>
+        </div>
+      </div>
+      <div class="box-why-3">
+        <div class="box-why-img">
+          <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/mind.png">
+        </div>
+        <div class="box-why-p">
+          <p>Mind Balance</p>
+        </div>
+      </div>
+
+      <div class="content-reason">
+        <div class="best-trainer-1" style="color: rgb(253,61,11);margin-left:900px;background-color: rgb(255,236,232);margin-top: -300px;">
+          <p>REASON</p>
+        </div>
+        <div class="professional" style="color: rgb(16,22,28);margin-top: -220px;margin-left: 900px;width: 400px;text-align: left;">
+          <p>Regular Aerobic Exercise For Good Health</p>
+        </div>
+        <div class="content-reason-p">
+          <p>Aerobic exercise provides cardiovascular conditioning. The term aerobic actually means "with oxygen," which means that breathing controls how much oxygen can be delivered to the muscles to help them burn fuel and move.</p>
+          <p style="margin-top: 30px;">A day you only need to spend 45 minutes doing aerobic exercise for moderate intensity exercisers. As for those who exercise with intense intensity, it only takes 30 minutes a day.</p>
+        </div>
+      </div>
+
+      <div class="benifit-content">
+        <div class="bottom-benifit">
+        <div class="best-trainer-2" style="color: white;margin-left: 740px;margin-top: 100px;">
+          <p>BENIFIT</p>
+        </div>
+        <div class="professional-1" style="font-family: 'Catamaran', sans-serif;color: white;margin-top: 10px;margin-left: 400px;width: 900px;text-align: left;font-size: 50px;">
+          <p>What do you get when you do aerobics?</p>
+        </div>
+        </div>
+
+        <div class="benifit-menu">
+          <div class="benifit-menu-img">
+            <div class="benifit-menu-box">
+              <h1>
+                <span>Weight Loss</span>
+                <p>Aerobic exercises are often practiced with music, music helps maintain speed, so it will optimize calories.</p>
+              </h1>
+            </div>
+            <img src="https://f8-zpcloud.zdn.vn/2020816852533265070/e1896f822b6df233ab7c.jpg">
+          </div>
+          <div class="benifit-menu-img-1">
+            <div class="benifit-menu-box">
+              <h1 style="margin-top: -20px;">
+                <span style="margin-left: -185px;">Supple</span>
+                <p>Aerobic exercise can make you feel tired at first. However, in the long run, you will feel more supple, more physically stable and less tired.</p>
+              </h1>
+            </div>
+            <img src="https://f7-zpcloud.zdn.vn/2699983856704485909/c95243f1e10838566119.jpg">
+          </div>
+          <div class="benifit-menu-img-2">
+            <div class="benifit-menu-box">
+              <h1 style="margin-top: -40px">
+                <span style="margin-left: -205px">Mood</span>
+                <p>If you maintain a vigorous pace, your body will release endorphins, the body's natural pain relievers. This helps the aerobic exerciser's mood to be healthy and increase euphoria.</p>
+              </h1>
+            </div>
+            <img src="https://f7-zpcloud.zdn.vn/7280447401016878357/309a933931c0e89eb1d1.jpg">
+          </div>
+          <div class="benifit-menu-img-3">
+            <div class="benifit-menu-box">
+              <h1 style="margin-top: -60px">
+                <span style="margin-left: -95px;">Reduce Disease</span>
+                <div class="benifit-menu-box-first">
+                <p>+ Prevent Osteoporosis.</p>
+                <p>+ Lower blood pressure and control blood sugar.</p>
+                <p>+ Better control of coronary artery disease.</p>
+                <p>+ Reducing the risk of diseases such as obesity.</p>
+                </div>
+              </h1>
+            </div>
+            <img src="https://f7-zpcloud.zdn.vn/8680806317248100658/076b0167b39e6ac0338f.jpg">
+          </div>
+
+          <div class="benifit-conteniu">
+            <i id="qoute-1" class="fa-solid fa-quote-left"></i>
+            <p>In addition, there are many benefits when you do aerobic exercise</p>
+            <div class="benifit-qoute-2" style="margin-top: -35px;"><i id="qoute-2" class="fa-solid fa-quote-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviewer-content">
+    <div class="reviewer">
+      <div class="best-trainer-1" style="color: rgb(253,61,11);margin-left:0px;background-color: rgb(255,236,232);">
+        <p>REVIEWER</p>
+      </div>
+      <div class="professional" style="color: rgb(16,22,28);margin-top: -200px;margin-left: -560px;">
+        <p>What Our Clients Says</p>
+      </div>
+
+      <div class="reviewer-border-father">
+        <div class="reviewer-border">
+          <img src="https://f8-zpcloud.zdn.vn/7790474393367701297/6f8b5c97946e4d30147f.jpg">
+          <h3 style="margin-left: -25px;">Jennifer</h3>
+          <span>Our Client</span>
+          <p>Before I started doing aerobics I studied the courses here and have never regretted signing up for the course, the courses are divided into many categories and it is suitable for everyone.</p>
+          <div class="reviewer-border-star">
+            <i style="color: rgb(255,192,7)" class="fa-solid fa-star"></i>
+            <i style="color: rgb(255,192,7);padding-left: 5px;" class="fa-solid fa-star"></i>
+            <i style="color: rgb(255,192,7);padding-left: 5px;" class="fa-solid fa-star"></i>
+            <i style="color: rgb(255,192,7);padding-left: 5px;" class="fa-solid fa-star"></i>
+            <i style="color: rgb(255,192,7);padding-left: 5px;" class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="reviewer-border" style="margin-left: 30px;">
+          <img src="https://f8-zpcloud.zdn.vn/8629734741863556399/6e7fde65169ccfc2968d.jpg">
+          <h3 style="margin-left: -25px;">William</h3>
+          <span>Our Client</span>
+          <p>Attending courses here is really effective. I feel full of energy all the time since joining. Not only that, the teachers here are also very enthusiastic.</p>
+          <div class="reviewer-border-star">
+            <i style="color: rgb(255,192,7)" class="fa-solid fa-star"></i>
+            <i style="color: rgb(255,192,7);padding-left: 5px;" class="fa-solid fa-star"></i>
+            <i style="color: rgb(255,192,7);padding-left: 5px;" class="fa-solid fa-star"></i>
+            <i style="color: rgb(255,192,7);padding-left: 5px;" class="fa-solid fa-star"></i>
+            <i style="color: rgb(140,148,160);padding-left: 5px;" class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="reviewer-border" style="margin-left: 30px;">
+          <img src="https://f5-zpcloud.zdn.vn/6758256704649692608/33874b9a83635a3d0372.jpg">
+          <h3 style="margin-left: -25px;">Rebecca</h3>
+          <span>Our Client</span>
+          <p>Everything here is good. From teachers to facilities and very quality courses, please find out and register for the course to have good health.</p>
+          <div class="reviewer-border-star">
+            <i style="color: rgb(255,192,7)" class="fa-solid fa-star"></i>
+            <i style="color: rgb(255,192,7);padding-left: 5px;" class="fa-solid fa-star"></i>
+            <i style="color: rgb(255,192,7);padding-left: 5px;" class="fa-solid fa-star"></i>
+            <i style="color: rgb(255,192,7);padding-left: 5px;" class="fa-solid fa-star"></i>
+            <i style="color: rgb(140,148,160);padding-left: 5px;" class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-statics">
+      <div class="best-trainer-1" style="color: rgb(253,61,11);margin-left:15px;background-color: rgb(255,236,232);">
+        <p>Course</p>
+      </div>
+      <div class="professional" style="color: rgb(16,22,28);margin-top: -200px;margin-left: 18px;width: 400px;line-height: 60px;text-align: left;font-size: 60px;">
+        <p>Number Of In The Course</p>
+      </div>
+      <p style="color: rgb(119,119,119);width: 500px;text-align: left;margin-left: 18px;margin-top: 50px;font-family: 'Catamaran', sans-serif;">Although humanity has entered the era of modernization, human life has not been as expected. Problems such as stress, anxiety, restlessness, nervous breakdowns, other stress-related illnesses, broken families, fatigue, suicide are all increasing exponentially. So we have created aerobic courses to help people always have a healthy mind and full of health.</p>
+      <div class="learn-about-p" style="margin-top: 30px;margin-left: 18px"><p style="color: black;font-size: 20px;font-weight: bold;text-align: left">Learn About</p></div>
+      <p style="color: black;font-size: 20px;font-weight: bold;text-align: right;margin-top: -33px;margin-right: 30px">92%</p>
+      <div class="range-create-1">
+        <div class="range-create-2"></div>
+      </div>
+      <div class="learn-about-p" style="margin-top: 50px;margin-left: 18px"><p style="color: black;font-size: 20px;font-weight: bold;text-align: left">Joined Course</p></div>
+      <p style="color: black;font-size: 20px;font-weight: bold;text-align: right;margin-top: -33px;margin-right: 30px">80%</p>
+      <div class="range-create-1">
+        <div class="range-create-3"></div>
+      </div>
+    </div>
+
+    <div class="login-box">
+      <h2>
+        Give Us Feedback</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Full Name</label>
+        </div>
+        <div class="user-box">
+          <input type="email" name="" required="">
+          <label>Email Address</label>
+        </div>
+        <div class="user-box">
+          <input type="number" name="" required="">
+          <label>Phone Number</label>
+        </div>
+        <div class="user-box">
+          <input style="height: 150px;" type="password" name="" required="">
+          <label>Message...</label>
+        </div>
+        <button class="table-plan-button-submit" style="margin-left: 6%"> SUBMIT NOW
+        </button>
+      </form>
+    </div>
   </div>
+
+    <footer>
+    <div class="row">
+      <div class="col">
+        <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317007180_546482750284382_6161932256266949373_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=BUcrYwuop1kAX-tIfgf&_nc_ht=scontent.fhan18-1.fna&oh=03_AdSpxTHQaLCWKayX2Ip9GbwlM7tF8RrMLi7--yFkaEga4g&oe=63AF88D8" class="footer-logo" alt="">
+        <p style="margin-left: -250px;">
+          <img src="https://shivaaythemes.in/fithub-demo/assets/images/clock-2.png">
+        <p style="font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: -35px;margin-left: -80px;">Monday - Friday</p>
+        <p style="color: rgb(163,171,179);font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 0px;margin-left: -65px;">7:00Am - 10:00Pm</p>
+
+        <p style="font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 20px;margin-left: -65px;">Saturday - Sunday</p>
+        <p style="color: rgb(163,171,179);font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 0px;margin-left: -65px;">7:00Am - 2:00Pm</p>
+      </div>
+      <div class="col" style="font-size: 15px;text-align: left">
+        <h3 style="font-size: 25px;font-weight: bold;">Office <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+        <a href="https://www.google.com/maps/place/8+T%C3%B4n+Th%E1%BA%A5t+Thuy%E1%BA%BFt,+M%E1%BB%B9+%C4%90%C3%ACnh,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0288058,105.7804978,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab4cd0c66f05:0xea31563511af2e54!8m2!3d21.0288058!4d105.7826865"><div class="col-img"><i style="color: white;" class="fa-solid fa-location-dot"></i></div></a>
+        <div class="col-img"><i style="color: white;margin-top: 25px" class="fa-regular fa-envelope"></i></div>
+        <div class="col-img"><i style="color: white;margin-top: 25px" class="fa-solid fa-phone"></i></div>
+        <div class="col-p">
+          <p >So 8, TonThatThuyet</p>
+          <p>Ha Noi, Viet Nam</p>
+          <p class="email-id">info@ygmail.com</p>
+          <p class="email-id" style="margin-top: -18px;">aerobicfighter@ygmail.com</p>
+        </div>
+        <h4 style="color: rgb(157,165,173);font-size: 15px;padding-left: 48px;">1800-121-3637</h4>
+        <h4 style="color: rgb(157,165,173);font-size: 15px;padding-left: 48px;">+84 0981578920</h4>
+      </div>
+      <div class="col" style="font-size: 15px;text-align: left">
+        <h3  style="font-size: 25px;font-weight: bold;">Links <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+        <ul class="footer-ul">
+          <li class="footer-li"><a routerLink="/home" (click)="onactive()" class="footer-a" style="color: rgb(252,60,8)">Home</a></li>
+          <li class="footer-li"><a routerLink="/class" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Classes</a></li>
+          <li class="footer-li"><a routerLink="/teacher" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Teachers</a></li>
+          <li class="footer-li"><a routerLink="/book" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173);">Book</a></li>
+          <li class="footer-li"><a routerLink="/course" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Course</a></li>
+        </ul>
+      </div>
+      <div class="col" style="font-size: 15px;font-weight: bold;">
+        <h3>NewsLetter <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+        <form class="footer-form">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" class="footer-input" placeholder="Enter your email id" required>
+          <button type="submit" class="footer-button"><i class="fas fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icons" style="text-align: left">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr style="width: 100%;">
+    <p class="copyright"  style="font-size: 20px;margin-left: -580px;">Easy Tutorials © 2022<span style="color: rgb(253,61,11);"> Aerobic Fighter </span>- All Rights Reserved</p>
+    </footer>
+</div>
+</div>
+
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/1744f3f671.js"></script>
@@ -38,6 +307,7 @@
 
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap');
   *{
     padding: 0;
     margin: 0;
@@ -221,6 +491,7 @@
     justify-content: flex-end;
   }
   ul#main-menu a{
+    font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
     padding: 10px 20px;
     /*color: #1fa3dd;*/
@@ -235,6 +506,608 @@
     opacity: 0.8;
     position: fixed;
   }
+  .title-class{
+    font-family: 'Catamaran', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    display: flex;
+    animation: textFly 3s forwards;
+  }
+  .h1-title {
+    font-size: 80px;
+    color:  white;
+    font-weight: 900;
+    line-height: 90px;
+    width: 600px;
+    text-align: left;
+
+  }
+  @keyframes  textFly {
+    from {
+      top: 35%;
+      opacity: 0;
+    }
+    to {
+      top: 40%;
+      opacity: 1;
+    }
+  }
+  .button-class{
+    margin-top: 190px;
+    margin-left: -600px;
+    width: 180px;
+    height: 45px;
+    border: 1px solid rgb(253,61,11);
+    border-radius: 10px;
+    background: rgb(253,61,11);
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .button-class a{
+    color: white;
+  }
+  .button-class:hover a{
+    color: black;
+  }
+  .content-home{
+    top: 115%;
+    left: -10%;
+    background-color: white;
+    width: 2000px;
+    height: 600px;
+    position: absolute;
+  }
+  .box-why{
+    border: 1px solid white;
+    width: 250px;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: -100px;
+    background-color: white;
+    padding-top: 45px;
+    box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+  }
+  .box-why-p p{
+    margin-top: 10px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+  .box-why-p:hover p{
+    color: rgb(253,63,13);
+  }
+  .box-why-1{
+    border: 1px solid white;
+    width: 250px;
+    height: 200px;
+    margin-left: 570px;
+    margin-top: -152px;
+    background-color: white;
+    padding-top: 45px;
+    box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+  }
+  .box-why-2{
+    border: 1px solid white;
+    width: 250px;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: -25px;
+    background-color: white;
+    padding-top: 45px;
+    box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+  }
+  .box-why-3{
+    border: 1px solid white;
+    width: 250px;
+    height: 200px;
+    margin-left: 570px;
+    margin-top: -152px;
+    background-color: white;
+    padding-top: 45px;
+    box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+  }
+  .best-trainer-1{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(253,61,11);
+    border: 1px solid rgb(255,236,232);
+    width: 200px;
+    height: 50px;
+    background-color: rgb(45,31,34);
+    border-radius: 20px;
+    padding-top: 8px;
+  }
+  .professional{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 35px;
+    color: white;
+    line-height: 45px;
+    font-weight: 800;
+    margin-left: -100px;
+    padding-top: 240px;
+  }
+  .professional:hover p{
+    color: rgb(253,61,11);
+  }
+  .content-reason-p{
+    width: 500px;
+    margin-left: 900px;
+    margin-top: 10px;
+  }
+  .content-reason-p p{
+    text-align: left;
+    color: rgb(119,119,119);
+    font-family: 'Catamaran', sans-serif;
+  }
+  .benifit-content{
+    background-color: rgb(20,27,34);
+    width: 2000px;
+    height: 1000px;
+    margin-top: 6.90%;
+    margin-left: -16%;
+  }
+  .bottom-benifit{
+    margin-top: 10px;
+    display: inline-block;
+  }
+  .best-trainer-2 p{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(253,61,11);
+    width: 200px;
+    height: 50px;
+    background-color: rgb(45,31,34);
+    border-radius: 20px;
+    padding-top: 8px;
+  }
+  .benifit-menu{
+    display: flex;
+    margin-left: 555px;
+    margin-top: 80px;
+  }
+  .benifit-menu img{
+    width: 300px;
+    border-radius: 15px;
+  }
+  .benifit-menu-img-1{
+    margin-left: 20px;
+  }
+  .benifit-menu-img-2{
+    margin-left: 20px;
+  }
+  .benifit-menu-img-3 {
+    margin-left: 20px;
+  }
+  .benifit-menu-box{
+    border: 1px solid rgba(50, 39, 17, 0.57);
+    position: absolute;
+    width: 300px;
+    height: 401px;
+    border-radius: 15px;
+    background-color: rgba(50, 39, 17, 0.57);
+    padding-top: 250px;
+    bottom: -723px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .benifit-menu-box span{
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-left: -120px;
+  }
+  .benifit-menu-box p{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(253,63,10);
+    text-align: left;
+    width: 270px;
+    padding-left: 15px;
+    font-size: 18px;
+  }
+  .benifit-menu-img:hover .benifit-menu-box{
+    bottom: -703px;
+    opacity: 1;
+  }
+  .benifit-menu-img-1:hover .benifit-menu-box{
+    bottom: -703px;
+    opacity: 1;
+  }
+  .benifit-menu-img-2:hover .benifit-menu-box{
+    bottom: -703px;
+    opacity: 1;
+  }
+  .benifit-menu-img-3:hover .benifit-menu-box{
+    bottom: -703px;
+    opacity: 1;
+  }
+  .benifit-menu-box-first p::first-letter{
+    color: white;
+  }
+  .benifit-conteniu{
+    font-family: 'Catamaran', sans-serif;
+    margin-left: 6.5%;
+    position: absolute;
+    margin-top: 450px;
+    color: white;
+    font-size: 28px;
+    border: 1px solid black;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    border-radius: 18px;
+    width: 1000px;
+  }
+  .benifit-conteniu #qoute-1{
+    margin-left: -850px;
+    font-size: 20px;
+  }
+  .benifit-conteniu #qoute-2{
+    margin-left: 870px;
+    font-size: 20px;
+  }
+  .benifit-conteniu p{
+    margin-top: -30px;
+    padding-left: 8px;
+  }
+  .benifit-conteniu:hover p{
+    color: rgb(240,60,11);
+  }
+  .benifit-conteniu:hover i{
+    color: rgb(240,60,11);
+  }
+  .reviewer-content{
+    top: 310%;
+    left: -16%;
+    background-color: white;
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+  }
+  .reviewer{
+    top: 7%;
+    left: 42%;
+    position: absolute;
+  }
+  .reviewer-border-father{
+    display: flex;
+    margin-left: -550px;
+    margin-top: 40px;
+  }
+  .reviewer-border{
+    width: 420px;
+    height: 290px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 20px;
+  }
+  .reviewer-border img{
+    margin-top: 25px;
+    margin-left: -260px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    border: 2px solid rgb(253,61,11);
+    width: 95px;
+    height: 95px;
+  }
+  .reviewer-border h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -80px;
+    margin-left: 50px;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+  }
+  .reviewer-border span{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(253,61,11);
+    margin-left: -28px;
+    font-family: 'Catamaran', sans-serif;
+  }
+  .reviewer-border p{
+    margin-left: 30px;
+    margin-top: 40px;
+    color: rgb(163,171,179);
+    width: 350px;
+    text-align: left;
+  }
+  .reviewer-border-star{
+    margin-top: 20px;
+    margin-left: -220px;
+    font-size: 20px;
+  }
+  .login-box {
+    position: absolute;
+    top: 56%;
+    left: 65.5%;
+    width: 600px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(44,50,55);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 20px;
+    font-family: 'Catamaran', sans-serif;
+  }
+
+  .login-box h2 {
+    padding: 0;
+    margin-bottom: 60px;
+    color: #fff;
+    text-align: left;
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .login-box .user-box {
+    position: relative;
+  }
+
+  .login-box .user-box input {
+    width: 100%;
+    margin-top: -10px;
+    font-size: 16px;
+    color: rgb(117,117,117);
+    margin-bottom: 30px;
+    border: none;
+    border: 1px solid #fff;
+    outline: none;
+    background-color: white;
+    height: 60px;
+    border-radius: 15px;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top: -5%;
+    left: 6%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(117,117,117);
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: 0;
+    left: 6%;
+    color: white;
+    font-size: 16px;
+    opacity: 0;
+  }
+  .table-plan-button-submit{
+    margin-top: 20px;
+    left: -5%;
+    border: unset;
+    border-radius: 17px;
+    border: 2px solid rgb(253,61,11);
+    color: white;
+    z-index: 1;
+    background: rgb(253,61,11);
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+    width: 520px;
+    height: 60px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 400ms;
+    overflow: hidden;
+  }
+
+  .table-plan-button-submit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: rgb(16,22,28);
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 400ms
+  }
+  .table-plan-button-submit:hover {
+    color: rgb(253,61,11);
+  }
+
+  .table-plan-button-submit:hover::before {
+    width: 100%;
+  }
+  .our-statics{
+    top: 42%;
+    left: 15%;
+    position: absolute;
+    font-family: 'Catamaran', sans-serif;
+  }
+  .range-create-1{
+    border: 1px solid rgb(255,218,210);
+    width: 480px;
+    height: 12px;
+    background-color: rgb(255,218,210);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  .range-create-2{
+    border: 1px solid rgb(253,61,11);
+    width: 420px;
+    height: 11px;
+    background-color: rgb(253,61,11);
+    border-radius: 20px;
+  }
+  .range-create-3{
+    border: 1px solid rgb(253,61,11);
+    width: 350px;
+    height: 11px;
+    background-color: rgb(253,61,11);
+    border-radius: 20px;
+  }
+  .reviewer-border:hover p{
+    color: rgb(253,61,11);
+  }
+  footer{
+    font-family: 'Catamaran', sans-serif;
+    width: 1600px;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+    top: 4050px;
+    margin-left: -220px;
+  }
+  footer .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  footer .row .col{
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  footer .row .col:nth-child(2), footer .row .col:nth-child(3){
+    flex-basis: 15%;
+
+  }
+
+  .footer-logo{
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  footer .row .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  footer .footer-ul .footer-li{
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  footer .footer-ul .footer-li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    width: 300px;
+    margin-bottom: 50px;
+  }
+  .footer-form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .footer-form .footer-input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+  .footer-form .footer-button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .footer-form .footer-button .fas{
+    font-size: 16px;
+    color: #ccc;
+  }
+  footer .social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    background: rgb(253,61,11);
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
+  .copyright{
+    padding-left: 32%;
+  }
+  .row .col .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+  }
+  footer .row .col .underline .footer-span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+  }
+  @keyframes moving {
+    0%{
+      left: -20px
+    }
+    100%{
+      left: 100%;
+    }
+  }
+  @media (max-width: 700px) {
+    footer{
+      bottom: unset;
+    }
+  }
+  .col-img i{
+    border: 1px solid rgb(253,61,11);
+    border-radius: 50%;
+    background-color: rgb(253,61,11);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  .col-p{
+    color: rgb(157,165,173);
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: -155px;
+    font-family: 'Catamaran', sans-serif;
+  }
+
 </style>
 
   <script src="https://kit.fontawesome.com/5c282fdeb6.js" crossorigin="anonymous"></script>

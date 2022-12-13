@@ -4,5 +4,7 @@ import {Component} from "@angular/core";
   templateUrl:'home.component.html'
 })
 export  class HomeComponent{
-
+  onactive() {
+    window.scroll(0,0)
+  }
 }

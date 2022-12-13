@@ -1,16 +1,16 @@
 <div id="wrapper">
   <header>
     <div class="inner-header container">
-      <a routerLink="/home" id="logo">
+      <a routerLink="/home" (click)="onactive()" id="logo">
         <img class="imglogo" src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317007180_546482750284382_6161932256266949373_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=BUcrYwuop1kAX-tIfgf&_nc_ht=scontent.fhan18-1.fna&oh=03_AdSpxTHQaLCWKayX2Ip9GbwlM7tF8RrMLi7--yFkaEga4g&oe=63AF88D8" width="280px" height="80px" alt="">
       </a>
       <nav>
         <ul id="main-menu">
-          <li><a routerLink="/class" style="color: rgb(253,61,11)">New Classes</a></li>
-          <li><a routerLink="/teacher">Teachers</a></li>
-          <li><a routerLink="/book">Book</a></li>
-          <li><a routerLink="/course">Course</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
+          <li><a routerLink="/class" (click)="onactive()" style="color: rgb(253,61,11)">New Classes</a></li>
+          <li><a routerLink="/teacher" (click)="onactive()">Teachers</a></li>
+          <li><a routerLink="/book" (click)="onactive()">Book</a></li>
+          <li><a routerLink="/course" (click)="onactive()">Course</a></li>
+          <li><a routerLink="/contact" (click)="onactive()">Contact</a></li>
         </ul>
 
       </nav>
@@ -31,91 +31,127 @@
   <div id="content" class="container">
     <div class="title-class">
       <h1 class="h1-title">Classes</h1>
-      <button class="button-class"><a href="" style="color: white">Home</a> > <a href="" style="color: white">Class</a></button>
+      <button class="button-class" style="font-family: 'Catamaran', sans-serif;"><a routerLink="/home" (click)="onactive()" style="color: white;">Home</a> > <a routerLink="/class" style="color: white">Class</a></button>
     </div>
 
     <div class="card-container">
     <div class="card-over">
       <div class="card-class">
-        <div class="card" style="width: 25rem;border-radius: 20px">
-          <img  style="border-top-left-radius: 20px;border-top-right-radius: 20px;" src="https://shivaaythemes.in/fithub-demo/assets/images/class-img1.jpg" class="card-img-top" alt="...">
+        <a routerLink="/classheatup" (click)="onactive()"><div class="card" style="width: 25rem;border-radius: 20px">
+          <img  style="border-top-left-radius: 20px;border-top-right-radius: 20px;" src="https://b-f6-zpcloud.zdn.vn/6891257886946898920/c55f59e9087cd122886d.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <img class="card-img-1" src="https://shivaaythemes.in/fithub-demo/assets/images/class-icon1.png">
             <div class="border-right"></div>
             <div class="card-h3-title">
-            <h3 class="h3-title">Cardio & Strenght Classes</h3></div>
-            <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.</p>
-<!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            <h3 class="h3-title">Warm Up The Body Classes</h3></div>
+            <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">Warming up before aerobic exercise is an important step.</p>
+            <div class="card-full" style="color: black;display: flex;font-family: 'Catamaran', sans-serif;margin-top: 20px;">
+            <p style="margin-left: 12px;">Class Full</p>
+            <p style="margin-left: 230px;">85%</p>
+            </div>
+            <div class="range-card-1">
+              <div class="range-card-2"></div>
+            </div>
           </div>
-        </div>
+        </div></a>
       </div>
       <div class="card-class-1">
-        <div class="card" style="width: 25rem;border-radius: 20px">
+        <a routerLink="/classendurance" (click)="onactive()"><div class="card" style="width: 25rem;border-radius: 20px">
           <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;" src="https://shivaaythemes.in/fithub-demo/assets/images/class-img2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <img class="card-img-1" src="https://shivaaythemes.in/fithub-demo/assets/images/class-icon2.png">
             <div class="border-right"></div>
             <div class="card-h3-title">
-              <h3 class="h3-title">Weight Lifting Classes</h3></div>
-            <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.</p>
-            <!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+              <h3 class="h3-title">Aerobic & Endurance Classes</h3></div>
+            <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">Every subject needs to have endurance to be able to withstand the pressure during practice.</p>
+            <div class="card-full" style="color: black;display: flex;font-family: 'Catamaran', sans-serif;margin-top: 20px;">
+              <p style="margin-left: 12px;">Class Full</p>
+              <p style="margin-left: 230px;">70%</p>
+            </div>
+            <div class="range-card-1">
+              <div class="range-card-3"></div>
+            </div>
           </div>
-        </div>
+        </div></a>
       </div>
       <div class="card-class-2">
-        <div class="card" style="width: 25rem;border-radius: 20px">
+       <a routerLink="/classmeditain" (click)="onactive()"> <div class="card" style="width: 25rem;border-radius: 20px">
           <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;" src="https://shivaaythemes.in/fithub-demo/assets/images/class-img3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <img class="card-img-1" src="https://shivaaythemes.in/fithub-demo/assets/images/class-icon3.png">
             <div class="border-right"></div>
             <div class="card-h3-title">
-              <h3 class="h3-title">Power Aerobic Classes</h3></div>
-            <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.</p>
-            <!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+              <h3 class="h3-title">Meditation Aerobic Classes</h3></div>
+            <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">The benefits of meditation have been known for a long time.</p>
+            <div class="card-full" style="color: black;display: flex;font-family: 'Catamaran', sans-serif;margin-top: 20px;">
+              <p style="margin-left: 12px;">Class Full</p>
+              <p style="margin-left: 230px;">90%</p>
+            </div>
+            <div class="range-card-1">
+              <div class="range-card-4"></div>
+            </div>
           </div>
-        </div>
+        </div></a>
       </div>
     </div>
 
     <div class="card-over-2">
     <div class="card-class-5">
-      <div class="card" style="width: 25rem;border-radius: 20px">
+     <a routerLink="/classpower" (click)="onactive()"><div class="card" style="width: 25rem;border-radius: 20px">
         <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;" src="https://shivaaythemes.in/fithub-demo/assets/images/class-img4.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <img class="card-img-1" src="https://shivaaythemes.in/fithub-demo/assets/images/class-icon4.png">
           <div class="border-right"></div>
           <div class="card-h3-title">
-            <h3 class="h3-title">Power Aerobic Classes</h3></div>
-          <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.</p>
-          <!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            <h3 class="h3-title">Power & Aerobic Classes</h3></div>
+          <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">Aerobic exercises help control the amount of oxygen in the breath.</p>
+          <div class="card-full" style="color: black;display: flex;font-family: 'Catamaran', sans-serif;margin-top: 20px;">
+            <p style="margin-left: 12px;">Class Full</p>
+            <p style="margin-left: 230px;">60%</p>
+          </div>
+          <div class="range-card-1">
+            <div class="range-card-5"></div>
+          </div>
         </div>
-      </div>
+     </div></a>
     </div>
     <div class="card-class-3">
-      <div class="card" style="width: 25rem;border-radius: 20px">
-        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;" src="https://shivaaythemes.in/fithub-demo/assets/images/class-img5.jpg" class="card-img-top" alt="...">
+     <a routerLink="/classheavy" (click)="onactive()"><div class="card" style="width: 25rem;border-radius: 20px">
+        <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;" src="https://f7-zpcloud.zdn.vn/7362825505087332760/2429f595a4007d5e2411.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <img class="card-img-1" src="https://shivaaythemes.in/fithub-demo/assets/images/class-icon5.png">
           <div class="border-right"></div>
           <div class="card-h3-title">
-            <h3 class="h3-title">Boxing & Martial Arts Classes</h3></div>
-          <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.</p>
-          <!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            <h3 class="h3-title">Heavy & Training Classes</h3></div>
+          <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">To effectively lose fat, go to aerobics class in the morning or exercise before meals.</p>
+          <div class="card-full" style="color: black;display: flex;font-family: 'Catamaran', sans-serif;margin-top: 20px;">
+            <p style="margin-left: 12px;">Class Full</p>
+            <p style="margin-left: 230px;">92%</p>
+          </div>
+          <div class="range-card-1">
+            <div class="range-card-6"></div>
+          </div>
         </div>
-      </div>
+     </div></a>
     </div>
     <div class="card-class-4">
-      <div class="card" style="width: 25rem;border-radius: 20px">
+      <a routerLink="/classdance" (click)="onactive()"><div class="card" style="width: 25rem;border-radius: 20px">
         <img style="border-top-left-radius: 20px;border-top-right-radius: 20px;" src="https://shivaaythemes.in/fithub-demo/assets/images/class-img6.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <img class="card-img-1" src="https://shivaaythemes.in/fithub-demo/assets/images/class-icon6.png">
           <div class="border-right"></div>
           <div class="card-h3-title">
             <h3 class="h3-title">Aerobic Dancing Classes</h3></div>
-          <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.</p>
-          <!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+          <p class="card-text" style="text-align: left;color: rgb(119,119,119);padding-top: 20px; ">Body movement exercises with between limbs, hips, buttocks, waist on vibrant music.</p>
+          <div class="card-full" style="color: black;display: flex;font-family: 'Catamaran', sans-serif;margin-top: 20px;">
+            <p style="margin-left: 12px;">Class Full</p>
+            <p style="margin-left: 230px;">80%</p>
+          </div>
+          <div class="range-card-1">
+            <div class="range-card-7"></div>
+          </div>
         </div>
-      </div>
+      </div></a>
     </div>
     </div>
     </div>
@@ -123,111 +159,428 @@
     <div class="card-trainer">
         <div class="card-parameter">
         <div class="card-parameter-content">
-          <p class="h2-title" style="color: white;">874</p>
+          <p class="h2-title" style="color: white;font-family: 'Catamaran', sans-serif;">874</p>
           <img src="https://shivaaythemes.in/fithub-demo/assets/images/happy-client.png">
-          <span class="parameter-span" style="color: white;">Happy Clients</span>
+          <span class="parameter-span" style="color: white;font-family: 'Catamaran', sans-serif;">Happy Clients</span>
         </div>
         </div>
       <div class="card-parameter-content-1">
-        <p class="h2-title-1" style="color: white;">987</p>
+        <p class="h2-title-1" style="color: white;font-family: 'Catamaran', sans-serif;">987</p>
         <img src="https://shivaaythemes.in/fithub-demo/assets/images/total-clients.png">
-        <span class="parameter-span" style="color: white;">Total Clients</span>
+        <span class="parameter-span" style="color: white;font-family: 'Catamaran', sans-serif;">Total Clients</span>
       </div>
       <div class="card-parameter-content-2">
-        <p class="h2-title-2" style="color: white;">587</p>
+        <p class="h2-title-2" style="color: white;font-family: 'Catamaran', sans-serif;">587</p>
         <img src="https://shivaaythemes.in/fithub-demo/assets/images/gym-equipment.png">
-        <span class="parameter-span" style="color: white;">Gym Equipment</span>
+        <span class="parameter-span" style="color: white;font-family: 'Catamaran', sans-serif;">Gym Equipment</span>
       </div>
       <div class="card-parameter-content-3">
-        <p class="h2-title-3" style="color: white;">748</p>
+        <p class="h2-title-3" style="color: white;font-family: 'Catamaran', sans-serif;">748</p>
         <img src="https://shivaaythemes.in/fithub-demo/assets/images/cup-of-coffee.png">
-        <span class="parameter-span" style="color: white;">Cup Of Coffee</span>
+        <span class="parameter-span" style="color: white;font-family: 'Catamaran', sans-serif;">Cup Of Coffee</span>
       </div>
 
       <div class="card-best">
         <div class="best-trainer">
-          <p>BEST TRAINER</p>
+          <p>TEACHERS</p>
         </div>
       </div>
       <div class="professional">
-        <p>Our Professional Trainer</p>
+        <p>Highly Rated Teachers</p>
+      </div>
+
+      <div class="all-background-profile">
+      <div class="all-background-profile-1">
+        <div class="all-background-profile-img"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer8.jpg"></div>
+        <a routerLink="/teacherconbruce" (click)="onactive()"><p>Bruce Bailey</p></a>
+        <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p>
+        <div class="fa-brand-p">
+          <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+          <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+          <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+        </div>
+
+        <div class="all-background-profile-2">
+          <div class="all-background-profile-img-1"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer7.jpg"></div>
+          <a routerLink="/teacherconzahra" (click)="onactive()"><p>Manny Johnes</p>
+            <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p></a>
+          <div class="fa-brand-p">
+            <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+            <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+            <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+          </div>
+
+          <div class="all-background-profile-3">
+            <div class="all-background-profile-img-2"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer6.jpg"></div>
+            <a routerLink="/teacherconhill" (click)="onactive()"><p>Steven Hill</p>
+              <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p></a>
+            <div class="fa-brand-p">
+              <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+              <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+              <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+            </div>
+
+            <div class="all-background-profile-4">
+              <div class="all-background-profile-img-3"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer5.jpg"></div>
+             <a routerLink="/teacherconruth" (click)="onactive()"><p>Ruth Edwards</p>
+               <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p></a>
+              <div class="fa-brand-p">
+                <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+                <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+                <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
       </div>
     </div>
+
+    <div class="table-price">
+      <div class="card-best">
+        <div class="best-trainer" style="color: rgb(255,236,232);margin-left:15px;margin-top: -380px;">
+          <p>PRICING TABLE</p>
+        </div>
+        <div class="professional" style="color: rgb(16,22,28);margin-top: -200px;margin-left: -550px;">
+          <p>Choose Your Pricing Plan</p>
+        </div>
+        <div class="table-plan">
+          <div class="table-plan-1">
+            <h2 style="color: white;font-size: 20px;font-weight: 800;padding-top: 30px;margin-left:-200px;">Standard Plan</h2>
+            <h2 class="price-plan" style="color: white;font-size: 40px;font-weight: bold;margin-left: -210px;">$35
+              <span style="font-size: 14px;margin-left: -5px;">/Month</span></h2>
+          </div>
+          <div class="table-plan-2">
+            <h2 style="color: white;font-size: 20px;font-weight: 800;padding-top: 30px;margin-left:-200px;">Advanced Plan</h2>
+            <h2 class="price-plan" style="color: white;font-size: 40px;font-weight: bold;margin-left: -210px;">$45
+              <span style="font-size: 14px;margin-left: -5px;">/Month</span></h2>
+          </div>
+          <div class="table-plan-3">
+            <h2 style="color: rgb(16,22,28);font-size: 20px;font-weight: 800;padding-top: 30px;margin-left:-180px;">Leadership Plan</h2>
+            <h2 class="price-plan" style="color: rgb(16,22,28);font-size: 40px;font-weight: bold;margin-left: -210px;">$65
+              <span style="font-size: 14px;margin-left: -5px;">/Month</span></h2>
+          </div>
+        </div>
+
+      <div class="menu-price-table">
+        <div class="table-plan-menu">
+          <div class="table-plan-menu-1">
+             <img class="table-menu-img" style="display: flex;margin-left: -500px;padding-top: 30px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+             <p class="table-menu-p" style="color: rgb(119,119,119);
+             margin-left: -515%;margin-top: -18px;
+">Unlimited club access</p>
+          </div>
+          <div class="table-plan-menu-2">
+            <img class="table-menu-img" style="display: flex;margin-left: -500px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -530%;margin-top: -18px;
+">Group attendance</p>
+          </div>
+          <div class="table-plan-menu-3">
+            <img class="table-menu-img" style="display: flex;margin-left: -500px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -545%;margin-top: -18px;
+">Aerobic visits</p>
+          </div>
+          <div class="table-plan-menu-4">
+            <img class="table-menu-img" style="display: flex;margin-left: -500px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -495%;margin-top: -18px;
+">Visits to the bath complex</p>
+          </div>
+          <div class="table-plan-menu-5">
+            <img class="table-menu-img" style="display: flex;margin-left: -500px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -525%;margin-top: -18px;
+">Aerobic, fight club</p>
+          </div>
+        </div>
+
+        <div class="table-plan-menu">
+          <div class="table-plan-menu-1">
+            <img class="table-menu-img" style="display: flex;margin-left: -220px;padding-top: 30px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -180%;margin-top: -18px;
+">Slow down body aging</p>
+          </div>
+          <div class="table-plan-menu-2">
+            <img class="table-menu-img" style="display: flex;margin-left: -220px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -178%;margin-top: -18px;
+">Create mental comfort</p>
+          </div>
+          <div class="table-plan-menu-3">
+            <img class="table-menu-img" style="display: flex;margin-left: -220px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -200%;margin-top: -18px;
+">Weight control</p>
+          </div>
+          <div class="table-plan-menu-4">
+            <img class="table-menu-img" style="display: flex;margin-left: -220px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -145%;margin-top: -18px;
+">Reduce the risk of fat in the blood</p>
+          </div>
+          <div class="table-plan-menu-5">
+            <img class="table-menu-img" style="display: flex;margin-left: -220px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -180%;margin-top: -18px;
+">Eliminate muscle pain</p>
+          </div>
+        </div>
+
+        <div class="table-plan-menu">
+          <div class="table-plan-menu-1">
+            <img class="table-menu-img" style="display: flex;margin-left: 40px;padding-top: 30px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -40px;margin-top: -18px;
+">Movements In Aerobics</p>
+          </div>
+          <div class="table-plan-menu-2">
+            <img class="table-menu-img" style="display: flex;margin-left: 40px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: 80px;margin-top: -18px;
+">Listening And Coordination Techniques</p>
+          </div>
+          <div class="table-plan-menu-3">
+            <img class="table-menu-img" style="display: flex;margin-left: 40px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -70px;margin-top: -18px;
+">Teaching Methods</p>
+          </div>
+          <div class="table-plan-menu-4">
+            <img class="table-menu-img" style="display: flex;margin-left: 40px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: -90px;margin-top: -18px;
+">Teaching Style</p>
+          </div>
+          <div class="table-plan-menu-5">
+            <img class="table-menu-img" style="display: flex;margin-left: 40px;padding-top: 8px;" src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+            <p class="table-menu-p"  style="color: rgb(119,119,119);
+            margin-left: 40px;margin-top: -18px;
+">End-Of-Course Assessment Test</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="table-plan-button">
+       <a routerLink="/course" (click)="onactive()"><button class="table-plan-button-1" style="margin-left: -6%"> JOIN NOW
+        </button></a>
+        <a routerLink="/courseadvand" (click)="onactive()"><button class="table-plan-button-1" style="margin-left: 7%"> JOIN NOW
+        </button></a>
+          <a routerLink="/courseleader" (click)="onactive()"><button class="table-plan-button-1" style="margin-left: 6%"> JOIN NOW
+          </button></a>
+      </div>
+
+
+      <div class="card-best">
+        <div class="best-trainer" style="color: rgb(255,236,232);margin-left:15px;margin-top: 480px;">
+          <p>For Newbies</p>
+        </div>
+        <div class="professional" style="color: rgb(16,22,28);margin-top: -200px;margin-left: -450px;">
+          <p>Classes For Newbies</p>
+        </div>
+      <div class="table-video">
+        <a routerLink="/classstep" (click)="onactive()"><div class="table-video-overview">
+          <img style="border-radius: 20px" src="https://f8-zpcloud.zdn.vn/9034605881571890623/07926c2e25b2fceca5a3.jpg" width="300px" height="240px">
+          <span>Aerobic Workout</span>
+          <h2>Basic Steps</h2>
+        </div></a>
+       <div class="table-video-overview-1" style="margin-left: 2%;">
+         <a routerLink="/classrun" (click)="onactive()"><img style="border-radius: 20px" src="https://shivaaythemes.in/fithub-demo/assets/images/portfolio-img4.jpg" width="300px" height="240px">
+          <span>Aerobic Workout</span>
+           <h2>Run & Endurance</h2></a>
+        </div>
+        <div class="table-video-overview-2" style="margin-left: 2%">
+          <a routerLink="/classbalance" (click)="onactive()"><img style="border-radius: 20px" src="https://f5-zpcloud.zdn.vn/7214020900372610494/109c7a3610a3c9fd90b2.jpg" width="300px" height="240px">
+          <span>Aerobic Workout</span>
+            <h2>Flexibility & balance</h2></a>
+        </div>
+        <div class="table-video-overview-3" style="margin-left: 2%">
+         <a routerLink="/classjum" (click)="onactive()"><img style="border-radius: 20px" src="https://shivaaythemes.in/fithub-demo/assets/images/portfolio-img5.jpg" width="300px" height="240px">
+          <span>Aerobic Workout</span>
+           <h2 style="margin-left: -30px;">Jumps & Leaps</h2></a>
+        </div>
+      </div>
+      <div class="table-video">
+        <div class="table-video-overview"  >
+         <a routerLink="/clasship" (click)="onactive()"><img style="border-radius: 20px" src="https://f8-zpcloud.zdn.vn/806325806099965712/be8ec9d3804f5911005e.jpg" width="300px" height="240px">
+          <span>Aerobic Workout</span>
+           <h2>Hip Shake</h2></a>
+        </div>
+        <div class="table-video-overview-1" style="margin-left: 2%;">
+          <a routerLink="/classkick" (click)="onactive()"><img style="border-radius: 20px" src="https://f8-zpcloud.zdn.vn/4006902196898736725/468d69f1206df933a07c.jpg" width="300px" height="240px">
+          <span>Aerobic Workout</span>
+            <h2>Kick Pillow</h2></a>
+        </div>
+        <div class="table-video-overview-2" style="margin-left: 2%">
+         <a routerLink="/classheel" (click)="onactive()"><img style="border-radius: 20px" src="https://f7-zpcloud.zdn.vn/4316683542216646133/16a4b4affd33246d7d22.jpg" width="300px" height="240px">
+          <span>Aerobic Workout</span>
+           <h2>Heel Touching butt</h2></a>
+        </div>
+        <div class="table-video-overview-3" style="margin-left: 2%">
+          <a routerLink="/classjack" (click)="onactive()"><img style="border-radius: 20px" src="https://f8-zpcloud.zdn.vn/5491677140479928463/063154281db4c4ea9da5.jpg" width="300px" height="240px">
+          <span>Aerobic Workout</span>
+            <h2 style="margin-left: -35px;">Jumping jack</h2></a>
+        </div>
+      </div>
+
+        <div class="best-trainer-1" style="margin-left:15px;margin-top: 880px;">
+          <p>Other Exercise</p>
+        </div>
+        <div class="professional-1" style="color: rgb(16,22,28);margin-top: -220px;margin-left: -435px;font-size: 40px">
+          <p>Here Are Other Exercises You May Need</p>
+        </div>
+        <div class="table-video">
+          <div class="table-video-overview"  >
+           <a routerLink="/classsupi" (click)="onactive()"><img style="border-radius: 20px" src="https://f8-zpcloud.zdn.vn/5745616949385286378/62c6a273ebef32b16bfe.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+             <h2>Supine</h2></a>
+          </div>
+          <div class="table-video-overview-1" style="margin-left: 2%;">
+           <a routerLink="/classjackstep" (click)="onactive()"><img style="border-radius: 20px" src="https://f7-zpcloud.zdn.vn/825868065622825256/6d7b07224ebe97e0ceaf.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+             <h2>Step Jack</h2></a>
+          </div>
+          <div class="table-video-overview-2" style="margin-left: 2%">
+           <a routerLink="/classbend" (click)="onactive()"><img style="border-radius: 20px" src="https://f8-zpcloud.zdn.vn/1441519495306199902/1ad23b847218ab46f209.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+             <h2>Bend Knee High</h2></a>
+          </div>
+          <div class="table-video-overview-3" style="margin-left: 2%">
+           <a routerLink="/classcardio" (click)="onactive()"><img style="border-radius: 20px" src="https://f8-zpcloud.zdn.vn/3215170589426854945/8833412608bad1e488ab.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+             <h2>Cardio Kickboxing</h2></a>
+          </div>
+        </div>
+        <div class="table-video">
+          <div class="table-video-overview"  >
+           <a routerLink="/classplan" (click)="onactive()"><img style="border-radius: 20px" src="https://f6-zpcloud.zdn.vn/2073206508194084724/8b5ed7589ec4479a1ed5.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+             <h2>Plank Jack</h2></a>
+          </div>
+          <div class="table-video-overview-1" style="margin-left: 2%;">
+            <a routerLink="/classzumba" (click)="onactive()"><img style="border-radius: 20px" src="https://f5-zpcloud.zdn.vn/3139828249323391362/a46045770cebd5b58cfa.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+              <h2>Dance Zumba</h2></a>
+          </div>
+          <div class="table-video-overview-2" style="margin-left: 2%">
+           <a routerLink="/classlegs" (click)="onactive()"><img style="border-radius: 20px" src="https://f8-zpcloud.zdn.vn/4476391536655273334/1fe4f9c9b055690b3044.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+             <h2>Jump Arms & Legs</h2></a>
+          </div>
+          <div class="table-video-overview-3" style="margin-left: 2%">
+            <a routerLink="/classtuck" (click)="onactive()"><img style="border-radius: 20px" src="https://f7-zpcloud.zdn.vn/3840803369733583527/5dd870cb3957e009b946.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+              <h2 style="margin-left: -35px;">Tummy Tuck</h2></a>
+          </div>
+        </div>
+    </div>
+
+      <div class="video-advanded">
+        <div class="video-advanded-name">
+          <div class="best-trainer-top" style="display: inline-block">
+          <div class="best-trainer" style="color: rgb(253,61,11);margin-left:-680px;margin-top: 130px;background-color: rgb(45,31,34);">
+            <p>Heavy Training</p>
+          </div>
+          </div>
+          <div class="professional" style="color: white;margin-top: -200px;margin-left: 320px;width: 600px;text-align: left">
+            <p>Exercises That Burn A Lot Of Calories</p>
+          </div>
+          <div class="advanded-p" style="color: rgb(253,61,11);width: 600px;margin-left: 320px;text-align: left;margin-top: 30px;"><p>In these exercises, the practitioner will have to practice to the music at a high speed to burn calories, so it requires the practitioner to be in good health and have been doing aerobics for a while.</p>
+          </div>
+          <div class="advanded-p" style="color: rgb(253,61,11);width: 600px;margin-left: 320px;text-align: left;margin-top: 30px;"><p>In these exercises, the practitioner will have to practice to the music at a high speed to burn calories, so it requires the practitioner to be in good health and have been doing aerobics for a while.</p>
+          </div>
+        </div>
+
+        <div class="table-video" style="margin-left: 965px;margin-top: -460px">
+          <div class="table-video-overview">
+           <a routerLink="/classhight" (click)="onactive()"><img style="border-radius: 20px" src="https://f8-zpcloud.zdn.vn/3186114035570142855/92523ceb7577ac29f566.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+             <h2>High Knee Shakingt</h2></a>
+          </div>
+          <div class="table-video-overview-1" style="margin-left: 2%;">
+            <a routerLink="/classsquat" (click)="onactive()"><img style="border-radius: 20px" src="https://f7-zpcloud.zdn.vn/7469515922339421594/097570c7395be005b94a.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+              <h2>Squat Touchdown</h2></a>
+          </div>
+      </div>
+        <div class="table-video" style="margin-left: 965px;margin-top: 20px">
+          <div class="table-video-overview">
+           <a routerLink="/classclimb" (click)="onactive()"><img style="border-radius: 20px" src="https://f7-zpcloud.zdn.vn/8470258045508576735/a65ae920a0bc79e220ad.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+             <h2>Climb the mountain</h2></a>
+          </div>
+          <div class="table-video-overview-1" style="margin-left: 2%;">
+            <a routerLink="/classburpe" (click)="onactive()"><img style="border-radius: 20px" src="https://f8-zpcloud.zdn.vn/4800561924580197617/32bf62f22b6ef230ab7f.jpg" width="300px" height="240px">
+            <span>Aerobic Workout</span>
+              <h2>Burpee</h2></a>
+          </div>
+        </div>
+
+
+
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317007180_546482750284382_6161932256266949373_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=BUcrYwuop1kAX-tIfgf&_nc_ht=scontent.fhan18-1.fna&oh=03_AdSpxTHQaLCWKayX2Ip9GbwlM7tF8RrMLi7--yFkaEga4g&oe=63AF88D8" class="footer-logo" alt="">
+          <p style="margin-left: -250px;">
+            <img src="https://shivaaythemes.in/fithub-demo/assets/images/clock-2.png">
+          <p style="font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: -35px;margin-left: -80px;">Monday - Friday</p>
+          <p style="color: rgb(163,171,179);font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 0px;margin-left: -65px;">7:00Am - 10:00Pm</p>
+
+          <p style="font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 20px;margin-left: -65px;">Saturday - Sunday</p>
+          <p style="color: rgb(163,171,179);font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 0px;margin-left: -65px;">7:00Am - 2:00Pm</p>
+        </div>
+        <div class="col" style="font-size: 15px;text-align: left">
+          <h3 style="font-size: 25px;font-weight: bold;">Office <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+          <a href="https://www.google.com/maps/place/8+T%C3%B4n+Th%E1%BA%A5t+Thuy%E1%BA%BFt,+M%E1%BB%B9+%C4%90%C3%ACnh,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0288058,105.7804978,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab4cd0c66f05:0xea31563511af2e54!8m2!3d21.0288058!4d105.7826865"><div class="col-img"><i style="color: white;" class="fa-solid fa-location-dot"></i></div></a>
+          <div class="col-img"><i style="color: white;margin-top: 25px" class="fa-regular fa-envelope"></i></div>
+          <div class="col-img"><i style="color: white;margin-top: 25px" class="fa-solid fa-phone"></i></div>
+          <div class="col-p">
+            <p >So 8, TonThatThuyet</p>
+            <p>Ha Noi, Viet Nam</p>
+            <p class="email-id">info@ygmail.com</p>
+            <p class="email-id" style="margin-top: -18px;">aerobicfighter@ygmail.com</p>
+          </div>
+          <h4 style="color: rgb(157,165,173);font-size: 15px;padding-left: 48px;">1800-121-3637</h4>
+          <h4 style="color: rgb(157,165,173);font-size: 15px;padding-left: 48px;">+84 0981578920</h4>
+        </div>
+        <div class="col" style="font-size: 15px;text-align: left">
+          <h3  style="font-size: 25px;font-weight: bold;">Links <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+          <ul class="footer-ul">
+            <li class="footer-li"><a routerLink="/home" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Home</a></li>
+            <li class="footer-li"><a routerLink="/class" (click)="onactive()" class="footer-a" style="color: rgb(252,60,8)">Classes</a></li>
+            <li class="footer-li"><a routerLink="/teacher" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Teachers</a></li>
+            <li class="footer-li"><a routerLink="/book" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173);">Book</a></li>
+            <li class="footer-li"><a routerLink="/course" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Course</a></li>
+          </ul>
+        </div>
+        <div class="col" style="font-size: 15px;font-weight: bold;">
+          <h3>NewsLetter <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+          <form class="footer-form">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" class="footer-input" placeholder="Enter your email id" required>
+            <button type="submit" class="footer-button"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="social-icons" style="text-align: left">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="width: 100%;">
+      <p class="copyright"  style="font-size: 20px;margin-left: -580px;">Easy Tutorials © 2022<span style="color: rgb(253,61,11);"> Aerobic Fighter</span> - All Rights Reserved</p>
+    </footer>
   </div>
 </div>
-<section id="testim" class="testim">
-  <div class="wrap">
+</div>
+</div>
 
-    <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-    <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-    <ul id="testim-dots" class="dots">
-      <li class="dot active"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-    </ul>
-    <div id="testim-content" class="cont">
-      <div class="active">
-        <div class="img"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer3.jpg"></div>
-        <h2>John Hard</h2>
-        <div class="cont-icon">
-          <p style="margin-left: 420px;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-facebook-f"></i></p>
-          <p style="margin: 0;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-instagram"></i></p>
-          <p style="margin-right: 420px;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-twitter"></i></p>
-        </div>
-        <p style="padding-top:10px;">John Hard grew up around the practice and philosophy of yoga, and is today considered one of the most knowledgeable yoga teachers in the United States, especially when it comes to teacher training.</p>
-
-      </div>
-
-      <div>
-        <div class="img"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer4.jpg"></div>
-        <h2>Zahra Sharif</h2>
-        <div class="cont-icon">
-          <p style="margin-left: 420px;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-facebook-f"></i></p>
-          <p style="margin: 0;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-instagram"></i></p>
-          <p style="margin-right: 420px;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-twitter"></i></p>
-        </div>
-        <p style="padding-top:10px;">A aerobic teacher for over 16 years, Zahra Sharif is a globally renowned yogi for setting a great example through the work she does for others in the discipline of aerobic.</p>
-      </div>
-
-      <div>
-        <div class="img"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer1.jpg"></div>
-        <h2>Desert Antony</h2>
-        <div class="cont-icon">
-          <p style="margin-left: 420px;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-facebook-f"></i></p>
-          <p style="margin: 0;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-instagram"></i></p>
-          <p style="margin-right: 420px;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-twitter"></i></p>
-        </div>
-        <p style="padding-top:10px;">Born into an aerobic family, he is one of the most influential people in modern aerobics, helping to transform the way that aerobics is taught and practiced in America.</p>
-      </div>
-
-      <div>
-        <div class="img"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer5.jpg"></div>
-        <h2>Ruth Edwards</h2>
-        <div class="cont-icon">
-          <p style="margin-left: 420px;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-facebook-f"></i></p>
-          <p style="margin: 0;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-instagram"></i></p>
-          <p style="margin-right: 420px;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-twitter"></i></p>
-        </div>
-        <p style="padding-top:10px;">An Aerobic Teacher, Priest, Author, and Psychotherapist in Marriage and Family. Ruth Edwards is a multi-talented inspiration!</p>
-      </div>
-
-      <div>
-        <div class="img"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer2.jpg"></div>
-        <h2>Kate Johnson</h2>
-        <div class="cont-icon">
-          <p style="margin-left: 420px;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-facebook-f"></i></p>
-          <p style="margin: 0;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-instagram"></i></p>
-          <p style="margin-right: 420px;border: 1px solid rgb(253,61,11);width: 40px;height: 40px;border-radius: 50%;padding-top:7px;color:rgb(253,61,11);"><i class="fa-brands fa-twitter"></i></p>
-        </div>
-        <p style="padding-top:10px;">As a teacher, author and health expert, Kate Johnson has over 15 years of experience in the health and aerobic fields.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/1744f3f671.js"></script>
@@ -236,6 +589,7 @@
 
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap');
   *{
     padding: 0;
     margin: 0;
@@ -419,6 +773,7 @@
     justify-content: flex-end;
   }
   ul#main-menu a{
+    font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
     padding: 10px 20px;
     /*color: #1fa3dd;*/
@@ -434,6 +789,7 @@
     position: fixed;
   }
   .title-class{
+    font-family: 'Catamaran', sans-serif;
     position: absolute;
     top: 45%;
     left: 14%;
@@ -441,7 +797,6 @@
     animation: textFly 3s forwards;
   }
   .h1-title {
-    font-family: 'Catamaran', sans-serif;
     font-size: 80px;
     color:  white;
     font-weight: 900;
@@ -460,7 +815,7 @@
   }
   .button-class{
     margin-top: 100px;
-    margin-left: -297px;
+    margin-left: -255px;
     width: 180px;
     height: 45px;
     border: 1px solid rgb(253,61,11);
@@ -477,7 +832,7 @@
     top: 95%;
     left: -235px;
     width: 2000px;
-    height: 1250px;
+    height: 1350px;
     position: absolute;
     background-color: whitesmoke;
     padding: 400px;
@@ -554,6 +909,9 @@
   .card-h3-title{
     padding-top: 22px;
   }
+  .card-h3-title:hover h3{
+    color: rgb(253,63,13);
+  }
   .h3-title {
     font-family: 'Catamaran', sans-serif;
     font-size: 25px;
@@ -564,10 +922,10 @@
     margin-left: 100px;
   }
   .card-trainer{
-    top: 285%;
+    top: 265%;
     left: -235px;
     width: 2000px;
-    height: 1250px;
+    height: 1000px;
     position: absolute;
     background-color: rgb(20,27,34);
   }
@@ -698,6 +1056,7 @@
     padding-top: 8px;
   }
   .professional{
+    font-family: 'Catamaran', sans-serif;
     font-size: 65px;
     color: white;
     line-height: 70px;
@@ -705,738 +1064,538 @@
     margin-left: -100px;
     padding-top: 230px;
   }
-
-
-  @import url(//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css);
-
-
-  *,
-  *:after,
-  *:before {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    cursor: default;
-  }
-
-
-  .testim {
-    width: 100%;
+  .table-price{
+    top: 391%;
+    left: -235px;
+    width: 2000px;
+    height: 3500px;
     position: absolute;
-    top: 390%;
-    -webkit-transform: translatey(-50%);
-    -moz-transform: translatey(-50%);
-    -ms-transform: translatey(-50%);
-    -o-transform: translatey(-50%);
-    transform: translatey(-50%);
+    background-color: rgb(253,253,253);
+    font-family: 'Catamaran', sans-serif;
   }
-
-  .testim .wrap {
-    position: relative;
-    width: 100%;
-    max-width: 1020px;
-    padding: 40px 20px;
-    margin: auto;
+  .table-plan{
+    display: flex;
+    margin-left: -540px;
+    margin-top: 80px;
   }
-
-  .testim .arrow {
-    display: block;
-    position: absolute;
-    color: #eee;
-    cursor: pointer;
-    font-size: 2em;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    padding: 5px;
-    z-index: 22222222;
+  .table-plan-1{
+    border: 1px solid rgb(253,61,11);
+    border-radius: 20px;
+    background-color: rgb(253,61,11);
+    width: 400px;
+    height: 130px;
+    box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 20%);
   }
-
-  .testim .arrow:before {
-    cursor: pointer;
+  .table-plan-2{
+    border: 1px solid rgb(20,27,34);
+    border-radius: 20px;
+    background-color: rgb(20,27,34);
+    margin-left: 50px;
+    width: 400px;
+    height: 130px;
+    box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 20%);
   }
-
-  .testim .arrow:hover {
-    color: rgb(253,61,11);
+  .table-plan-3{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 50px;
+    width: 400px;
+    height: 130px;
+    box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 20%);
   }
+ .menu-price-table{
+   display: flex;
+ }
+ .table-menu-img{
+   margin-top: 20px;
+ }
+ .table-plan-button-1{
+   margin-top: 40%;
+   border: unset;
+   border-radius: 17px;
+   border: 2px solid rgb(253,61,11);
+   color: rgb(253,61,11);
+   z-index: 1;
+   background: white;
+   position: relative;
+   font-weight: bold;
+   font-size: 17px;
+   width: 320px;
+   height: 60px;
+   -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+   box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+   transition: all 400ms;
+   overflow: hidden;
+ }
 
-
-  .testim .arrow.left {
-    left: 10px;
-  }
-
-  .testim .arrow.right {
-    right: 10px;
-  }
-
-  .testim .dots {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: 60px;
-    left: 0;
-    display: block;
-    z-index: 3333;
-    height: 12px;
-  }
-
-  .testim .dots .dot {
-    list-style-type: none;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 1px solid #eee;
-    margin: 0 10px;
-    cursor: pointer;
-    -webkit-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    position: relative;
-  }
-
-  .testim .dots .dot.active,
-  .testim .dots .dot:hover {
-    background: rgb(253,61,11);
-    border-color: rgb(253,61,11);
-  }
-
-  .testim .dots .dot.active {
-    -webkit-animation: testim-scale .5s ease-in-out forwards;
-    -moz-animation: testim-scale .5s ease-in-out forwards;
-    -ms-animation: testim-scale .5s ease-in-out forwards;
-    -o-animation: testim-scale .5s ease-in-out forwards;
-    animation: testim-scale .5s ease-in-out forwards;
-  }
-
-  .testim .cont {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .testim .cont > div {
-    text-align: center;
+  .table-plan-button-1::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0 0 70px 0;
-    opacity: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: rgb(253,61,11);
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 400ms
   }
 
-  .testim .cont > div.inactive {
-    opacity: 1;
+  .table-plan-button-1:hover {
+    color: #e8e8e8;
   }
 
-
-  .testim .cont > div.active {
-    position: relative;
-    opacity: 1;
+  .table-plan-button-1:hover::before {
+    width: 100%;
   }
-  .testim .cont div .img img {
+  .table-video{
+    display: flex;
+    margin-left: -522px;
+    margin-top: 50px;
+    font-family: 'Catamaran', sans-serif;
+  }
+  .table-video-overview img{
     display: block;
-    width: 250px;
-    height: 250px;
-    margin: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  .table-video-overview:hover img {
+    transform: scale(1.05);
+    border: 5px solid rgb(253,61,11);
+  }
+  .table-video-overview-1 img{
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  .table-video-overview-1:hover img {
+    transform: scale(1.05);
+    border: 5px solid rgb(253,61,11);
+  }
+  .table-video-overview-2 img{
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  .table-video-overview-2:hover img {
+    transform: scale(1.05);
+    border: 5px solid rgb(253,61,11);
+  }
+  .table-video-overview-3 img{
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  .table-video-overview-3:hover img {
+    transform: scale(1.05);
+    border: 5px solid rgb(253,61,11);
+  }
+  .table-video-overview span{
+    font-size: 15px;
+    color: rgb(225,225,225,0.6);
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -110px;
+  }
+  .table-video-overview-1 span{
+    font-size: 15px;
+    color: rgb(225,225,225,0.6);
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -110px;
+  }
+  .table-video-overview-2 span{
+    font-size: 15px;
+    color: rgb(225,225,225,0.6);
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -110px;
+  }
+  .table-video-overview-3 span{
+    font-size: 15px;
+    color: rgb(225,225,225,0.6);
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -110px;
+  }
+  .table-video-overview h2{
+    color: white;
+    font-weight: bold;
+    margin-top: -70px;
+    margin-left: 40px;
+    font-size: 25px;
+    position: absolute;
+  }
+  .table-video-overview-1 h2{
+    color: white;
+    font-weight: bold;
+    margin-top: -70px;
+    margin-left: 40px;
+    font-size: 25px;
+    position: absolute;
+  }
+  .table-video-overview-2 h2{
+    color: white;
+    font-weight: bold;
+    margin-top: -70px;
+    margin-left: 40px;
+    font-size: 25px;
+    position: absolute;
+  }
+  .table-video-overview-3 h2{
+    color: white;
+    font-weight: bold;
+    margin-top: -70px;
+    margin-left: -8px;
+    font-size: 25px;
+    position: absolute;
+    width: 300px;
+  }
+  .table-video-overview:hover h2{
+    color: rgb(253,61,11);
+  }
+  .table-video-overview-1:hover h2{
+    color: rgb(253,61,11);
+  }
+  .table-video-overview-2:hover h2{
+    color: rgb(253,61,11);
+  }
+  .table-video-overview-3:hover h2 {
+    color: rgb(253, 61, 11);
+  }
+  .range-card-1{
+    border: 1px solid rgb(255,218,210);
+    width: 330px;
+    height: 10px;
+    background-color: rgb(255,218,210);
+    border-radius: 20px;
+    margin-top: 2px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+  }
+  .range-card-2{
+    border: 1px solid rgb(253,61,11);
+    width: 260px;
+    height: 9px;
+    background-color: rgb(253,61,11);
+    border-radius: 20px;
+  }
+  .range-card-3{
+    border: 1px solid rgb(253,61,11);
+    width: 230px;
+    height: 9px;
+    background-color: rgb(253,61,11);
+    border-radius: 20px;
+  }
+  .range-card-4{
+    border: 1px solid rgb(253,61,11);
+    width: 285px;
+    height: 9px;
+    background-color: rgb(253,61,11);
+    border-radius: 20px;
+  }
+  .range-card-5{
+    border: 1px solid rgb(253,61,11);
+    width: 215px;
+    height: 9px;
+    background-color: rgb(253,61,11);
+    border-radius: 20px;
+  }
+  .range-card-6{
+     border: 1px solid rgb(253,61,11);
+     width: 290px;
+     height: 9px;
+     background-color: rgb(253,61,11);
+     border-radius: 20px;
+   }
+  .range-card-7{
+     border: 1px solid rgb(253,61,11);
+     width: 250px;
+     height: 9px;
+     background-color: rgb(253,61,11);
+     border-radius: 20px;
+   }
+  .video-advanded{
+    background-color: rgb(9,13,36);
+    width: 2000px;
+    height: 680px;
+    margin-top: 48%;
+  }
+  .advanded-p:hover p{
+    color: white;
+  }
+  .best-trainer-1{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(253,61,11);
+    border: 1px solid rgb(255,236,232);
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255,236,232);
+    border-radius: 20px;
+    padding-top: 8px;
+  }
+  .professional-1{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 800;
+    margin-left: -100px;
+    padding-top: 230px;
+  }
+  .all-background-profile{
+    margin-top: 50px;
+    margin-left: -1150px;
+  }
+  .all-background-profile-1{
+    margin-top: 50px;
+  }
+  .all-background-profile-2{
+    margin-left: 700px;
+    margin-top: -455px;
+  }
+  .all-background-profile-3{
+    margin-left: 700px;
+    margin-top: -455px;
+  }
+  .all-background-profile-4{
+    margin-left: 700px;
+    margin-top: -455px;
+  }
+  .all-background-profile img{
+    border-radius: 50%;
+    border: 10px solid rgb(119,119,119);
+    padding: 18px 18px 18px 18px;
+    width: 300px;
+    transition: all 0.2s;
+    overflow: hidden;
+  }
+  .all-background-profile p{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+    color: white;
+  }
+  .all-background-profile i{
+    margin-top: 25px;
+    border: 1px solid rgb(253,61,11);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: rgb(253,61,11);
+    font-size: 20px;
+    padding-top: 8px;
+  }
+  .fa-brand{
+    margin-top: -30px;
+    margin-left: -100px;
+    cursor: pointer;
+  }
+  .fa-brand-1{
+    margin-top: -95px;
+    cursor: pointer;
+  }
+  .fa-brand-2{
+    margin-top: -95px;
+    cursor: pointer;
+  }
+  .fa-brand-p:hover i{
+    background-color: rgb(253,61,11);
+    color: white;
+    border: 1px solid rgb(253,61,11);
+  }
+  .all-background-profile-img:hover img{
+    transform: scale(1.05);
     border-radius: 50%;
     border: 10px solid rgb(253,61,11);
-
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+  }
+  .all-background-profile-img-1:hover img{
+    transform: scale(1.05);
+    border-radius: 50%;
+    border: 10px solid rgb(253,61,11);
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+  }
+  .all-background-profile-img-2:hover img{
+    transform: scale(1.05);
+    border-radius: 50%;
+    border: 10px solid rgb(253,61,11);
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+  }
+  .all-background-profile-img-3:hover img{
+    transform: scale(1.05);
+    border-radius: 50%;
+    border: 10px solid rgb(253,61,11);
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+  }
+  .all-background-profile-img-4:hover img{
+    transform: scale(1.05);
+    border-radius: 50%;
+    border: 10px solid rgb(253,61,11);
+    padding: 10px 10px 10px 10px;
+    width: 300px;
   }
 
-  .testim .cont div h2 {
-    color: rgb(253,61,11);
-    font-size: 2em;
-    margin: 15px 0;
-    font-weight: bold;
-  }
 
-  .testim .cont div p {
-    font-size: 1.5em;
-    color: #eee;
-    width: 80%;
+  footer{
+    font-family: 'Catamaran', sans-serif;
+    width: 1600px;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+    top: 1040px;
+    margin-left: 180px;
+  }
+  footer .row{
+    width: 85%;
     margin: auto;
-    font-weight: bold;
-  }
-  .cont-icon{
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
   }
-  .cont-icon p{
+  footer .row .col{
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  footer .row .col:nth-child(2), footer .row .col:nth-child(3){
+    flex-basis: 15%;
+
+  }
+
+  .footer-logo{
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  footer .row .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  footer .footer-ul .footer-li{
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  footer .footer-ul .footer-li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    width: 300px;
+    margin-bottom: 50px;
+  }
+  .footer-form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .footer-form .footer-input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+  .footer-form .footer-button{
+    background: transparent;
+    border: 0;
+    outline: none;
     cursor: pointer;
-    background-color: rgb(20,27,34);
   }
-
-
-
-  .testim .cont div.active .img img {
-    -webkit-animation: testim-show .5s ease-in-out forwards;
-    -moz-animation: testim-show .5s ease-in-out forwards;
-    -ms-animation: testim-show .5s ease-in-out forwards;
-    -o-animation: testim-show .5s ease-in-out forwards;
-    animation: testim-show .5s ease-in-out forwards;
+  .footer-form .footer-button .fas{
+    font-size: 16px;
+    color: #ccc;
   }
-
-  .testim .cont div.active h2 {
-    -webkit-animation: testim-content-in .4s ease-in-out forwards;
-    -moz-animation: testim-content-in .4s ease-in-out forwards;
-    -ms-animation: testim-content-in .4s ease-in-out forwards;
-    -o-animation: testim-content-in .4s ease-in-out forwards;
-    animation: testim-content-in .4s ease-in-out forwards;
+  footer .social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    background: rgb(253,61,11);
+    margin-right: 15px;
+    cursor: pointer;
   }
-
-  .testim .cont div.active p {
-    -webkit-animation: testim-content-in .5s ease-in-out forwards;
-    -moz-animation: testim-content-in .5s ease-in-out forwards;
-    -ms-animation: testim-content-in .5s ease-in-out forwards;
-    -o-animation: testim-content-in .5s ease-in-out forwards;
-    animation: testim-content-in .5s ease-in-out forwards;
+  hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
   }
-
-  .testim .cont div.inactive .img img {
-    -webkit-animation: testim-hide .5s ease-in-out forwards;
-    -moz-animation: testim-hide .5s ease-in-out forwards;
-    -ms-animation: testim-hide .5s ease-in-out forwards;
-    -o-animation: testim-hide .5s ease-in-out forwards;
-    animation: testim-hide .5s ease-in-out forwards;
+  .copyright{
+    padding-left: 32%;
   }
-
-  .testim .cont div.inactive h2 {
-    -webkit-animation: testim-content-out .4s ease-in-out forwards;
-    -moz-animation: testim-content-out .4s ease-in-out forwards;
-    -ms-animation: testim-content-out .4s ease-in-out forwards;
-    -o-animation: testim-content-out .4s ease-in-out forwards;
-    animation: testim-content-out .4s ease-in-out forwards;
+  .row .col .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
   }
-
-  .testim .cont div.inactive p {
-    -webkit-animation: testim-content-out .5s ease-in-out forwards;
-    -moz-animation: testim-content-out .5s ease-in-out forwards;
-    -ms-animation: testim-content-out .5s ease-in-out forwards;
-    -o-animation: testim-content-out .5s ease-in-out forwards;
-    animation: testim-content-out .5s ease-in-out forwards;
+  footer .row .col .underline .footer-span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
   }
-
-  @-webkit-keyframes testim-scale {
-    0% {
-      -webkit-box-shadow: 0px 0px 0px 0px #eee;
-      box-shadow: 0px 0px 0px 0px #eee;
+  @keyframes moving {
+    0%{
+      left: -20px
     }
-
-    35% {
-      -webkit-box-shadow: 0px 0px 10px 5px #eee;
-      box-shadow: 0px 0px 10px 5px #eee;
-    }
-
-    70% {
-      -webkit-box-shadow: 0px 0px 10px 5px #ea830e;
-      box-shadow: 0px 0px 10px 5px #ea830e;
-    }
-
-    100% {
-      -webkit-box-shadow: 0px 0px 0px 0px #ea830e;
-      box-shadow: 0px 0px 0px 0px #ea830e;
+    100%{
+      left: 100%;
     }
   }
-
-  @-moz-keyframes testim-scale {
-    0% {
-      -moz-box-shadow: 0px 0px 0px 0px #eee;
-      box-shadow: 0px 0px 0px 0px #eee;
-    }
-
-    35% {
-      -moz-box-shadow: 0px 0px 10px 5px #eee;
-      box-shadow: 0px 0px 10px 5px #eee;
-    }
-
-    70% {
-      -moz-box-shadow: 0px 0px 10px 5px #ea830e;
-      box-shadow: 0px 0px 10px 5px #ea830e;
-    }
-
-    100% {
-      -moz-box-shadow: 0px 0px 0px 0px #ea830e;
-      box-shadow: 0px 0px 0px 0px #ea830e;
+  @media (max-width: 700px) {
+    footer{
+      bottom: unset;
     }
   }
-
-  @-ms-keyframes testim-scale {
-    0% {
-      -ms-box-shadow: 0px 0px 0px 0px #eee;
-      box-shadow: 0px 0px 0px 0px #eee;
-    }
-
-    35% {
-      -ms-box-shadow: 0px 0px 10px 5px #eee;
-      box-shadow: 0px 0px 10px 5px #eee;
-    }
-
-    70% {
-      -ms-box-shadow: 0px 0px 10px 5px #ea830e;
-      box-shadow: 0px 0px 10px 5px #ea830e;
-    }
-
-    100% {
-      -ms-box-shadow: 0px 0px 0px 0px #ea830e;
-      box-shadow: 0px 0px 0px 0px #ea830e;
-    }
+  .col-img i{
+    border: 1px solid rgb(253,61,11);
+    border-radius: 50%;
+    background-color: rgb(253,61,11);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
   }
-
-  @-o-keyframes testim-scale {
-    0% {
-      -o-box-shadow: 0px 0px 0px 0px #eee;
-      box-shadow: 0px 0px 0px 0px #eee;
-    }
-
-    35% {
-      -o-box-shadow: 0px 0px 10px 5px #eee;
-      box-shadow: 0px 0px 10px 5px #eee;
-    }
-
-    70% {
-      -o-box-shadow: 0px 0px 10px 5px #ea830e;
-      box-shadow: 0px 0px 10px 5px #ea830e;
-    }
-
-    100% {
-      -o-box-shadow: 0px 0px 0px 0px #ea830e;
-      box-shadow: 0px 0px 0px 0px #ea830e;
-    }
+  .col-p{
+    color: rgb(157,165,173);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: -155px;
   }
-
-  @keyframes testim-scale {
-    0% {
-      box-shadow: 0px 0px 0px 0px #eee;
-    }
-
-    35% {
-      box-shadow: 0px 0px 10px 5px #eee;
-    }
-
-    70% {
-      box-shadow: 0px 0px 10px 5px #ea830e;
-    }
-
-    100% {
-      box-shadow: 0px 0px 0px 0px #ea830e;
-    }
-  }
-
-  @-webkit-keyframes testim-content-in {
-    from {
-      opacity: 0;
-      -webkit-transform: translateY(100%);
-      transform: translateY(100%);
-    }
-
-    to {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-
-  @-moz-keyframes testim-content-in {
-    from {
-      opacity: 0;
-      -moz-transform: translateY(100%);
-      transform: translateY(100%);
-    }
-
-    to {
-      opacity: 1;
-      -moz-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-
-  @-ms-keyframes testim-content-in {
-    from {
-      opacity: 0;
-      -ms-transform: translateY(100%);
-      transform: translateY(100%);
-    }
-
-    to {
-      opacity: 1;
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-
-  @-o-keyframes testim-content-in {
-    from {
-      opacity: 0;
-      -o-transform: translateY(100%);
-      transform: translateY(100%);
-    }
-
-    to {
-      opacity: 1;
-      -o-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes testim-content-in {
-    from {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @-webkit-keyframes testim-content-out {
-    from {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-
-    to {
-      opacity: 0;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-    }
-  }
-
-  @-moz-keyframes testim-content-out {
-    from {
-      opacity: 1;
-      -moz-transform: translateY(0);
-      transform: translateY(0);
-    }
-
-    to {
-      opacity: 0;
-      -moz-transform: translateY(-100%);
-      transform: translateY(-100%);
-    }
-  }
-
-  @-ms-keyframes testim-content-out {
-    from {
-      opacity: 1;
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-    }
-
-    to {
-      opacity: 0;
-      -ms-transform: translateY(-100%);
-      transform: translateY(-100%);
-    }
-  }
-
-  @-o-keyframes testim-content-out {
-    from {
-      opacity: 1;
-      -o-transform: translateY(0);
-      transform: translateY(0);
-    }
-
-    to {
-      opacity: 0;
-      transform: translateY(-100%);
-      transform: translateY(-100%);
-    }
-  }
-
-  @keyframes testim-content-out {
-    from {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    to {
-      opacity: 0;
-      transform: translateY(-100%);
-    }
-  }
-
-  @-webkit-keyframes testim-show {
-    from {
-      opacity: 0;
-      -webkit-transform: scale(0);
-      transform: scale(0);
-    }
-
-    to {
-      opacity: 1;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-  }
-
-  @-moz-keyframes testim-show {
-    from {
-      opacity: 0;
-      -moz-transform: scale(0);
-      transform: scale(0);
-    }
-
-    to {
-      opacity: 1;
-      -moz-transform: scale(1);
-      transform: scale(1);
-    }
-  }
-
-  @-ms-keyframes testim-show {
-    from {
-      opacity: 0;
-      -ms-transform: scale(0);
-      transform: scale(0);
-    }
-
-    to {
-      opacity: 1;
-      -ms-transform: scale(1);
-      transform: scale(1);
-    }
-  }
-
-  @-o-keyframes testim-show {
-    from {
-      opacity: 0;
-      -o-transform: scale(0);
-      transform: scale(0);
-    }
-
-    to {
-      opacity: 1;
-      -o-transform: scale(1);
-      transform: scale(1);
-    }
-  }
-
-  @keyframes testim-show {
-    from {
-      opacity: 0;
-      transform: scale(0);
-    }
-
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  @-webkit-keyframes testim-hide {
-    from {
-      opacity: 1;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-
-    to {
-      opacity: 0;
-      -webkit-transform: scale(0);
-      transform: scale(0);
-    }
-  }
-
-  @-moz-keyframes testim-hide {
-    from {
-      opacity: 1;
-      -moz-transform: scale(1);
-      transform: scale(1);
-    }
-
-    to {
-      opacity: 0;
-      -moz-transform: scale(0);
-      transform: scale(0);
-    }
-  }
-
-  @-ms-keyframes testim-hide {
-    from {
-      opacity: 1;
-      -ms-transform: scale(1);
-      transform: scale(1);
-    }
-
-    to {
-      opacity: 0;
-      -ms-transform: scale(0);
-      transform: scale(0);
-    }
-  }
-
-  @-o-keyframes testim-hide {
-    from {
-      opacity: 1;
-      -o-transform: scale(1);
-      transform: scale(1);
-    }
-
-    to {
-      opacity: 0;
-      -o-transform: scale(0);
-      transform: scale(0);
-    }
-  }
-
-  @keyframes testim-hide {
-    from {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    to {
-      opacity: 0;
-      transform: scale(0);
-    }
-  }
-
-  @media all and (max-width: 300px) {
-    body {
-      font-size: 14px;
-    }
-  }
-
-  @media all and (max-width: 500px) {
-    .testim .arrow {
-      font-size: 1.5em;
-    }
-
-    .testim .cont div p {
-      line-height: 25px;
-    }
-
-  }
-
 </style>
 
 
-<script>
-  'use strict'
-  var	testim = document.getElementById("testim"),
-    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
-    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
-    testimLeftArrow = document.getElementById("left-arrow"),
-    testimRightArrow = document.getElementById("right-arrow"),
-    testimSpeed = 4500,
-    currentSlide = 0,
-    currentActive = 0,
-    testimTimer,
-    touchStartPos,
-    touchEndPos,
-    touchPosDiff,
-    ignoreTouch = 30;
-  ;
 
-  window.onload = function() {
-    function playSlide(slide) {
-      for (var k = 0; k < testimDots.length; k++) {
-        testimContent[k].classList.remove("active");
-        testimContent[k].classList.remove("inactive");
-        testimDots[k].classList.remove("active");
-      }
-
-      if (slide < 0) {
-        slide = currentSlide = testimContent.length-1;
-      }
-
-      if (slide > testimContent.length - 1) {
-        slide = currentSlide = 0;
-      }
-
-      if (currentActive != currentSlide) {
-        testimContent[currentActive].classList.add("inactive");
-      }
-      testimContent[slide].classList.add("active");
-      testimDots[slide].classList.add("active");
-
-      currentActive = currentSlide;
-
-      clearTimeout(testimTimer);
-      testimTimer = setTimeout(function() {
-        playSlide(currentSlide += 1);
-      }, testimSpeed)
-    }
-
-    testimLeftArrow.addEventListener("click", function() {
-      playSlide(currentSlide -= 1);
-    })
-
-    testimRightArrow.addEventListener("click", function() {
-      playSlide(currentSlide += 1);
-    })
-
-    for (var l = 0; l < testimDots.length; l++) {
-      testimDots[l].addEventListener("click", function() {
-        playSlide(currentSlide = testimDots.indexOf(this));
-      })
-    }
-
-    playSlide(currentSlide);
-    document.addEventListener("keyup", function(e) {
-      switch (e.keyCode) {
-        case 37:
-          testimLeftArrow.click();
-          break;
-
-        case 39:
-          testimRightArrow.click();
-          break;
-
-        case 39:
-          testimRightArrow.click();
-          break;
-
-        default:
-          break;
-      }
-    })
-
-    testim.addEventListener("touchstart", function(e) {
-      touchStartPos = e.changedTouches[0].clientX;
-    })
-
-    testim.addEventListener("touchend", function(e) {
-      touchEndPos = e.changedTouches[0].clientX;
-
-      touchPosDiff = touchStartPos - touchEndPos;
-
-      console.log(touchPosDiff);
-      console.log(touchStartPos);
-      console.log(touchEndPos);
-
-
-      if (touchPosDiff > 0 + ignoreTouch) {
-        testimLeftArrow.click();
-      } else if (touchPosDiff < 0 - ignoreTouch) {
-        testimRightArrow.click();
-      } else {
-        return;
-      }
-
-    })
-  }
-</script>
 <script src="https://kit.fontawesome.com/5c282fdeb6.js" crossorigin="anonymous"></script>
 
 

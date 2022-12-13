@@ -1,0 +1,1183 @@
+<div id="wrapper" xmlns="http://www.w3.org/1999/html">
+  <header>
+    <div class="inner-header container">
+      <a routerLink="/home" id="logo">
+        <img class="imglogo" src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317007180_546482750284382_6161932256266949373_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=BUcrYwuop1kAX-tIfgf&_nc_ht=scontent.fhan18-1.fna&oh=03_AdSpxTHQaLCWKayX2Ip9GbwlM7tF8RrMLi7--yFkaEga4g&oe=63AF88D8" width="280px" height="80px" alt="">
+      </a>
+      <nav>
+        <ul id="main-menu">
+          <li><a routerLink="/class" (click)="onactive()">New Classes</a></li>
+          <li><a routerLink="/teacher" (click)="onactive()">Teachers</a></li>
+          <li><a routerLink="/book" (click)="onactive()">Book</a></li>
+          <li><a routerLink="/course" (click)="onactive()" style="color: rgb(253,61,11)">Course</a></li>
+          <li><a routerLink="/contact" (click)="onactive()">Contact</a></li>
+        </ul>
+
+      </nav>
+      <div class="form-search">
+        <div class="search-border" style="border: 2px solid rgb(253,63,10);width: 45px;height: 45px;border-radius:50px;position: absolute;margin-left:167px;margin-top:2px;"></div>
+        <form action="" class="search-bar" style="margin-left: 100px;">
+          <input type="search" name="search" pattern=".*\S.*" required>
+          <button class="search-btn" type="submit">
+            <span>Search</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <div id="banner">
+    <img id="tenta" src="https://img5.thuthuatphanmem.vn/uploads/2021/12/28/anh-nen-gym-4k_032107734.jpg" width="100%" height="600px" alt="">
+  </div>
+  <div id="content" class="container">
+
+    <div class="title-class">
+      <h1 class="h1-title">Course</h1>
+      <button class="button-class"><a routerLink="/home" (click)="onactive()" style="color: white">Home</a> > <a routerLink="/course" style="color: white">COURSE</a></button>
+    </div>
+
+    <div class="course-container">
+
+      <div class="course-menu">
+        <img src="https://f7-zpcloud.zdn.vn/3794513292052652828/e632a24e62edbbb3e2fc.jpg" width="890px" height="500px">
+      </div>
+
+      <div class="professional" style="color: rgb(16,22,28);margin-top: -200px;margin-left: 230px;width: 1000px;text-align: left;">
+        <p>Our courses have many suitable times</p>
+      </div>
+      <div class="professional-p" style="color: rgb(119,119,119);margin-left: 230px;font-family: 'Catamaran', sans-serif;">
+        <p style="width: 900px;text-align: left;">
+          Understanding your desire, AerobicFighter offers an online weight loss course Aerobic - effective weight loss and keeping in shape The course is taught by a professional Aerobic coach, with very basic Aerobic exercises. can make it easy for you to practice in an enjoyable and effective way.</p>
+        <p style="width: 900px;text-align: left;padding-top: 30px;">Aerobic not only helps you prevent some diseases but also helps you feel more comfortable every day. Aerobic helps reduce the risk of fat in the blood, control weight, eliminate muscle pain, create mental comfort, strengthen a strong skeleton, slow down the aging of the body. Especially your skin, if your body is healthy, your skin will definitely keep its spring color longer.</p>
+      </div>
+
+      <div class="course-video">
+        <div class="course-video-iframe">
+          <iframe width="890" height="450" src="https://www.youtube.com/embed/fBP3T2WX3B4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       </div>
+        <p class="course-video-p-1">Demo Video</p>
+        <p class="course-video-p" style="font-size: 15px">If you want to own a beautiful body, standard shape and especially effective weight loss, quickly register for the Aerobic course - Effective weight loss and keep in shape is available at AerobicFighter!</p>
+      </div>
+      <div class="plan-menu">
+        <div class="plan-menu-p">
+          <p>Discounts when participating in the course:</p>
+        </div>
+        <div class="plan-menu-img">
+          <img src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+          <p>Slow down body aging</p>
+        </div>
+        <div class="plan-menu-img">
+          <img src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+          <div class="plan-menu-hover"><p style="margin-left: 235px">Create mental comfort</p></div>
+        </div>
+        <div class="plan-menu-img">
+          <img src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+          <div class="plan-menu-hover"><p style="margin-left: 180px">Weight control</p></div>
+        </div>
+        <div class="plan-menu-img">
+          <img src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+          <div class="plan-menu-hover"><p style="margin-left: 315px">Reduce the risk of fat in the blood</p></div>
+        </div>
+        <div class="plan-menu-img">
+          <img src="https://shivaaythemes.in/fithub-demo/assets/images/check.png">
+          <div class="plan-menu-hover"><p style="margin-left: 230px">Eliminate muscle pain</p></div>
+        </div>
+        <a routerLink="/contact" (click)="onactive()"><button class="table-plan-button-1" style="margin-left: 32%"> JOIN NOW
+        </button></a>
+
+        <div class="plan-menu-other">
+          <div class="plan-menu-p-1">
+            <p>Other Courses:</p>
+          </div>
+
+          <div class="pointer-other">
+            <a routerLink="/course" (click)="onactive()">
+              <div class="other-img"><img src="https://f8-zpcloud.zdn.vn/1787205586038577122/2fcd149a6701be5fe710.jpg" width="100px" height="100px"></div>
+              <p class="menu-content" style="margin-left: 690px;">Standard Plan</p>
+              <div class="other-p"><p class="menu-information">Welcome to our course, thank you for learning this course.</p></div>
+              <p class="menu-price">$35/Month</p>
+            </a>
+          </div>
+
+          <div class="pointer-other-1">
+            <a routerLink="/courseleader" (click)="onactive()">
+              <div class="other-img-1"><img src="https://f8-zpcloud.zdn.vn/3839502500179606861/d760a63ddb9902c75b88.jpg"  width="100px" height="100px"></div>
+              <p class="menu-content-1">Leadership Plan</p>
+              <div class="other-p-1"><p class="menu-information">Welcome to our course, thank you for learning this course.</p></div>
+              <p class="menu-price">$65/Month</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="plan-menu-p-1">
+          <p>Category:</p>
+        </div>
+
+        <div class="category-box">
+          <div class="category-aerobic"><p>Aerobics</p></div>
+          <div class="category-dance"><p>Aerobic Dance</p></div>
+          <div class="category-heat"><p>Heat Up</p></div>
+          <div class="category-power"><p>Power Aerobic</p></div>
+          <div class="category-heavy"><p>Heavy Training</p></div>
+          <div class="category-meditation"><p>Meditation</p></div>
+        </div>
+
+        <div class="plan-menu-p-1">
+          <p>Price List:</p>
+        </div>
+
+        <div class="price-menu">
+          <div class="price-name"><p>Name: Advanced</p></div>
+          <div class="price-45"><p>Price: 45$/Month</p></div>
+          <div class="price-mont"><p>Training In: 8 Month</p></div>
+        </div>
+      </div>
+
+      <div class="comment-trainer">
+        <div class="best-trainer-2" style="color: rgb(253,61,11);margin-left:0px;background-color: rgb(255,236,232);border: 1px solid rgb(255,236,232);">
+          <p>CUSTOMER COMMENTS</p>
+        </div>
+        <div class="professional" style="color: rgb(16,22,28);margin-top: -200px;margin-left: -280px;width: 800px;">
+          <p>Comments</p>
+        </div>
+
+        <div class="comment-people">
+          <div class="comment-img"><img src="https://shivaaythemes.in/fithub-demo/assets/images/comment-client1.jpg"></div>
+          <div class="comment-people-p"><p style="margin-left: -10px">David Parker</p></div>
+          <div class="comment-date-p"><p>7 March, 202</p></div>
+          <div class="comment-content-p"><p>The program is very suitable for me, very suitable for those who like simple movements that are not too complicated and also effective.</p></div>
+          <div class="comment-reply-p"><p>Reply</p></div>
+        </div>
+
+        <div class="bottom-comment"></div>
+
+        <div class="comment-people">
+          <div class="comment-img"><img src="https://shivaaythemes.in/fithub-demo/assets/images/comment-client2.jpg"></div>
+          <div class="comment-people-p"><p style="margin-left: -15px">Harry Olson</p></div>
+          <div class="comment-date-p"><p>2 March, 202</p></div>
+          <div class="comment-content-p"><p>Thank you for such good routines that inspire and make us continue and motivate us to exercise, I have already reduced my belly a bit and I feel great.</p></div>
+          <div class="comment-reply-p"><p>Reply</p></div>
+        </div>
+
+        <div class="best-trainer-2" style="color: rgb(253,61,11);margin-top: -525px;margin-left:1040px;background-color: rgb(255,236,232);border: 1px solid rgb(255,236,232);width: 220px;">
+          <p>WRITE COMMENTS</p>
+        </div>
+        <div class="professional" style="color: rgb(16,22,28);margin-top: -200px;margin-left: 660px;width: 800px;">
+          <p>Leave A Comment</p>
+        </div>
+
+        <div class="login-box">
+          <form>
+            <div class="user-box" style="width: 250px">
+              <input type="text" name="" required="">
+              <label>First Name</label>
+            </div>
+            <div class="user-box" style="width: 250px;margin-left: 270px;margin-top: -80px;" >
+              <input type="text" name="" required="">
+              <label>Last Name</label>
+            </div>
+            <div class="user-box">
+              <input type="email" name="" required="">
+              <label style="margin-left: -10px;">Email</label>
+            </div>
+            <div class="user-box">
+              <input style="height: 150px;" type="password" name="" required="">
+              <label style="margin-left: -10px;">Content...</label>
+            </div>
+            <button class="table-plan-button-submit" style="margin-left: 6%"> POST NOW
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317007180_546482750284382_6161932256266949373_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=BUcrYwuop1kAX-tIfgf&_nc_ht=scontent.fhan18-1.fna&oh=03_AdSpxTHQaLCWKayX2Ip9GbwlM7tF8RrMLi7--yFkaEga4g&oe=63AF88D8" class="footer-logo" alt="">
+          <p style="margin-left: -250px;">
+            <img src="https://shivaaythemes.in/fithub-demo/assets/images/clock-2.png">
+          <p style="font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: -35px;margin-left: -80px;">Monday - Friday</p>
+          <p style="color: rgb(163,171,179);font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 0px;margin-left: -65px;">7:00Am - 10:00Pm</p>
+
+          <p style="font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 20px;margin-left: -65px;">Saturday - Sunday</p>
+          <p style="color: rgb(163,171,179);font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 0px;margin-left: -65px;">7:00Am - 2:00Pm</p>
+        </div>
+        <div class="col" style="font-size: 15px;text-align: left">
+          <h3 style="font-size: 25px;font-weight: bold;">Office <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+          <a href="https://www.google.com/maps/place/8+T%C3%B4n+Th%E1%BA%A5t+Thuy%E1%BA%BFt,+M%E1%BB%B9+%C4%90%C3%ACnh,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0288058,105.7804978,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab4cd0c66f05:0xea31563511af2e54!8m2!3d21.0288058!4d105.7826865"><div class="col-img"><i style="color: white;" class="fa-solid fa-location-dot"></i></div></a>
+          <div class="col-img"><i style="color: white;margin-top: 25px" class="fa-regular fa-envelope"></i></div>
+          <div class="col-img"><i style="color: white;margin-top: 25px" class="fa-solid fa-phone"></i></div>
+          <div class="col-p">
+            <p >So 8, TonThatThuyet</p>
+            <p>Ha Noi, Viet Nam</p>
+            <p class="email-id">info@ygmail.com</p>
+            <p class="email-id" style="margin-top: -18px;">aerobicfighter@ygmail.com</p>
+          </div>
+          <h4 style="color: rgb(157,165,173);font-size: 15px;padding-left: 48px;">1800-121-3637</h4>
+          <h4 style="color: rgb(157,165,173);font-size: 15px;padding-left: 48px;">+84 0981578920</h4>
+        </div>
+        <div class="col" style="font-size: 15px;text-align: left">
+          <h3  style="font-size: 25px;font-weight: bold;">Links <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+          <ul class="footer-ul">
+            <li class="footer-li"><a routerLink="/home" class="footer-a" style="color: rgb(157,165,173)">Home</a></li>
+            <li class="footer-li"><a routerLink="/class" class="footer-a" style="color: rgb(157,165,173)">Classes</a></li>
+            <li class="footer-li"><a routerLink="/teacher" class="footer-a" style="color: rgb(157,165,173)">Teachers</a></li>
+            <li class="footer-li"><a routerLink="/book" class="footer-a" style="color: rgb(157,165,173);">Book</a></li>
+            <li class="footer-li"><a routerLink="/course" class="footer-a" style="color: rgb(252,60,8)">Course</a></li>
+          </ul>
+        </div>
+        <div class="col" style="font-size: 15px;font-weight: bold;">
+          <h3>NewsLetter <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+          <form class="footer-form">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" class="footer-input" placeholder="Enter your email id" required>
+            <button type="submit" class="footer-button"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="social-icons" style="text-align: left">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="width: 100%;">
+      <p class="copyright"  style="font-size: 20px;margin-left: -580px;">Easy Tutorials © 2022<span style="color: rgb(253,61,11);"> Aerobic Fighter</span> - All Rights Reserved</p>
+    </footer>
+  </div>
+</div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap');
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .imglogo{
+    margin: 3px;
+    animation: textFly 2s forwards;
+  }
+  .container{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1140px;
+  }
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    background-color: #fff;
+  }
+  header{
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    /*background: linear-gradient(to right, #00093c, #2d0b00);*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #5a5961;
+    padding: 15px 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 99;
+  }
+  .inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-search{
+    border: none;
+    width: 180px;
+    position: relative;
+    animation: textFly 2s forwards;
+  }
+  body, .search-bar {
+    display: flex;
+  }
+  .search-bar input,
+  .search-btn,
+  .search-btn:before,
+  .search-btn:after {
+    transition: all 0.25s ease-out;
+  }
+  .search-bar input,
+  .search-btn {
+    width: 3em;
+    height: 3em;
+  }
+  .search-bar input:invalid:not(:focus),
+  .search-btn {
+    cursor: pointer;
+  }
+  .search-bar,
+  .search-bar input:focus,
+  .search-bar input:valid  {
+    width: 100%;
+  }
+  .search-bar input:focus,
+  .search-bar input:not(:focus) + .search-btn:focus {
+    outline: transparent;
+  }
+  .search-bar {
+    margin: auto;
+    padding: 0.1em;
+    justify-content: center;
+  }
+  .search-bar input {
+    background: transparent;
+    border-radius: 1.5em;
+    box-shadow: 0 0 0 0.4em #171717 inset;
+    padding: 0.75em;
+    transform: translate(0.5em,0.5em) scale(0.5);
+    transform-origin: 100% 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .search-bar input:focus,
+  .search-bar input:valid {
+    background: #fff;
+    border-radius: 0.375em 0 0 0.375em;
+    box-shadow: 0 0 0 0.1em #d9d9d9 inset;
+    transform: scale(1);
+  }
+  .search-btn {
+    background: white;
+    border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+    padding: 0.75em;
+    position: relative;
+    transform: translate(0.25em,0.25em) rotate(45deg) scale(0.25,0.125);
+    transform-origin: 0 50%;
+  }
+  .search-btn:before,
+  .search-btn:after {
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+  }
+  .search-btn:before {
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+    top: 0.75em;
+    left: 0.75em;
+    width: 1.2em;
+    height: 1.2em;
+  }
+  .search-btn:after {
+    background: #f1f1f1;
+    border-radius: 0 0.25em 0.25em 0;
+    top: 51%;
+    left: 51%;
+    width: 0.75em;
+    height: 0.25em;
+    transform: translate(0.2em,0) rotate(45deg);
+    transform-origin: 0 50%;
+  }
+  .search-btn span {
+    display: inline-block;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+  }
+
+  .search-bar input:focus + .search-btn,
+  .search-bar input:valid + .search-btn {
+    background: rgb(253,61,11);
+    border-radius: 0 0.375em 0.375em 0;
+    transform: scale(1);
+  }
+  .search-bar input:focus + .search-btn:before,
+  .search-bar input:focus + .search-btn:after,
+  .search-bar input:valid + .search-btn:before,
+  .search-bar input:valid + .search-btn:after {
+    opacity: 1;
+  }
+  .search-bar input:focus + .search-btn:hover,
+  .search-bar input:valid + .search-btn:hover,
+  .search-bar input:valid:not(:focus) + .search-btn:focus {
+    background: #0c48db;
+  }
+  .search-bar input:focus + .search-btn:active,
+  .search-bar input:valid + .search-btn:active {
+    transform: translateY(1px);
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    body, input {
+      color: #f1f1f1;
+    }
+    body {
+      background: #171717;
+    }
+    .search-bar input {
+      box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+    }
+    .search-bar input:focus,
+    .search-bar input:valid {
+      background: #3d3d3d;
+      box-shadow: 0 0 0 0.1em #3d3d3d inset;
+    }
+    .search-btn {
+      background: #f1f1f1;
+    }
+  }
+  ul#main-menu{
+    display: flex;
+    justify-content: flex-end;
+  }
+  ul#main-menu a{
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    /*color: #1fa3dd;*/
+    color: white;
+    display: block;
+    font-weight: bold;
+    animation: textFly 2s forwards;
+  }
+  #banner img#tenta{
+    width: 1450px;
+    height: 900px;
+    opacity: 0.8;
+    position: fixed;
+  }
+  .title-class{
+    font-family: 'Catamaran', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 14%;
+    display: flex;
+    animation: textFly 3s forwards;
+  }
+  .h1-title {
+    font-size: 80px;
+    color:  white;
+    font-weight: 900;
+    line-height: 90px;
+
+  }
+  @keyframes  textFly {
+    from {
+      top: 40%;
+      opacity: 0;
+    }
+    to {
+      top: 45%;
+      opacity: 1;
+    }
+  }
+  .button-class{
+    margin-top: 100px;
+    margin-left: -245px;
+    width: 180px;
+    height: 45px;
+    border: 1px solid rgb(253,61,11);
+    border-radius: 10px;
+    background: rgb(253,61,11);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    color:  white;
+  }
+  .course-container{
+    width: 2000px;
+    height: 2500px;
+    top: 96%;
+    left: -10%;
+    position: absolute;
+    background-color: white;
+  }
+  .course-menu{
+    margin-left: -33%;
+    margin-top: 5%;
+  }
+  .course-menu img{
+    border-radius: 15px;
+  }
+  .professional{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 50px;
+    color: white;
+    line-height: 70px;
+    font-weight: 800;
+    padding-top: 230px;
+  }
+  .plan-menu-p{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(16,22,28);
+    font-size: 30px;
+    text-align: left;
+    width: 400px;
+    margin-left: 58%;
+    margin-top: -1420px;
+  }
+  .plan-menu-img{
+    padding-top: 30px;
+    margin-left: 17%;
+  }
+  .plan-menu-img p{
+    font-family: 'Catamaran', sans-serif;
+    margin-left: 230px;
+    margin-top: -22px;
+    color: rgb(119,119,119);
+  }
+  .plan-menu-img:hover p{
+    margin-left: 236px;
+  }
+  .plan-menu-img:hover .plan-menu-hover{
+    margin-left: 6px;
+  }
+  .table-plan-button-1{
+    margin-top: 2%;
+    border: unset;
+    border-radius: 17px;
+    border: 1px solid white;
+    color: white;
+    z-index: 1;
+    background: rgb(253,61,11);
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+    width: 320px;
+    height: 60px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 400ms;
+    overflow: hidden;
+  }
+  .table-plan-button-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: white;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 400ms
+  }
+  .table-plan-button-1:hover {
+    color: rgb(253,61,11);
+  }
+  .table-plan-button-1:hover::before {
+    width: 100%;
+  }
+  .plan-menu-p-1{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(16,22,28);
+    font-size: 30px;
+    text-align: left;
+    width: 400px;
+    margin-left: 58%;
+    margin-top: 60px;
+  }
+  .plan-menu-other img{
+    margin-top: 30px;
+    margin-left: 420px;
+    border-radius: 15px;
+  }
+  .menu-content{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(253,61,11);
+    margin-left: 695px;
+    margin-top: -102px;
+    font-size: 20px;
+  }
+  .menu-content-1{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(253,61,11);
+    margin-left: 700px;
+    margin-top: -102px;
+    font-size: 20px;
+  }
+  .menu-information{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(119,119,119);
+    margin-left: 1280px;
+    text-align: left;
+    width: 250px;
+  }
+  .menu-price{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(253,61,11);
+    margin-left: 640px;
+    font-size: 15px;
+  }
+  .course-video{
+    margin-left: 230px;
+    margin-top: 100px;
+    border: 1px solid rgb(215,215,215);
+    width: 891px;
+    border-radius: 15px;
+    height: 600px;
+  }
+  .course-video p{
+    font-family: 'Catamaran', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .course-video:hover p.course-video-p-1{
+    color: rgb(253,61,11);
+  }
+  .course-video-p{
+    color: rgb(119,119,119);
+    text-align: left;
+    width: 800px;
+    margin-left: 20px;
+  }
+  iframe{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  .plan-menu-p-1{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(16,22,28);
+    font-size: 30px;
+    text-align: left;
+    width: 400px;
+    margin-left: 58%;
+    margin-top: 50px;
+  }
+  .category-box{
+    color: rgb(119,119,119);
+    font-family: 'Catamaran', sans-serif;
+    margin-left: 1160px;
+    margin-top: 26px;
+    display: flex;
+  }
+  .category-aerobic{
+    border: 1px solid rgb(119,119,119);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  }
+  .category-aerobic:hover p{
+    background-color: rgb(253,61,11);
+    margin-top: -9px;
+    margin-left: -1px;
+    color: white;
+    border: 1px solid rgb(253,61,11);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    -webkit-box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+    box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+  }
+
+  .category-dance{
+    margin-left: 10px;
+    border: 1px solid rgb(119,119,119);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  }
+  .category-dance:hover p{
+    background-color: rgb(253,61,11);
+    margin-top: -9px;
+    margin-left: -1px;
+    color: white;
+    border: 1px solid rgb(253,61,11);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    -webkit-box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+    box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+  }
+
+  .category-heat{
+    margin-left: 10px;
+    border: 1px solid rgb(119,119,119);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  }
+  .category-heat:hover p{
+    background-color: rgb(253,61,11);
+    margin-top: -9px;
+    margin-left: -1px;
+    color: white;
+    border: 1px solid rgb(253,61,11);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    -webkit-box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+    box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+  }
+
+  .category-power{
+    margin-top: 60px;
+    margin-left: -380px;
+    border: 1px solid rgb(119,119,119);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  }
+  .category-power:hover p{
+    background-color: rgb(253,61,11);
+    margin-top: -9px;
+    margin-left: -1px;
+    color: white;
+    border: 1px solid rgb(253,61,11);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    -webkit-box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+    box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+  }
+
+  .category-heavy{
+    margin-top: 60px;
+    margin-left: 10px;
+    border: 1px solid rgb(119,119,119);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  }
+  .category-heavy:hover p{
+    background-color: rgb(253,61,11);
+    margin-top: -9px;
+    margin-left: -1px;
+    color: white;
+    border: 1px solid rgb(253,61,11);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    -webkit-box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+    box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+  }
+
+  .category-meditation{
+    margin-top: 60px;
+    margin-left: 10px;
+    border: 1px solid rgb(119,119,119);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+  }
+  .category-meditation:hover p{
+    background-color: rgb(253,61,11);
+    margin-top: -9px;
+    margin-left: -1px;
+    color: white;
+    border: 1px solid rgb(253,61,11);
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    padding-top: 8px;
+    -webkit-box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+    box-shadow: 4px 1px 19px -3px rgb(253,61,11);
+  }
+  .price-menu{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(119,119,119);
+    margin-top: 25px;
+  }
+  .price-name{
+    margin-left: 520px;
+    font-size: 28px;
+  }
+  .price-name:hover p{
+    color: rgb(253,61,11);
+  }
+  .price-45{
+    margin-top: 25px;
+    margin-left: 538px;
+    font-size: 28px;
+  }
+  .price-45:hover p{
+    color: rgb(253,61,11);
+  }
+  .price-mont{
+    margin-top: 25px;
+    margin-left: 573px;
+    font-size: 28px;
+  }
+  .price-mont:hover p{
+    color: rgb(253,61,11);
+  }
+  .other-img:hover img{
+    transform: scale(1.02);
+  }
+  .other-img-1:hover img{
+    transform: scale(1.02);
+  }
+  .other-p:hover p{
+    color: black;
+  }
+  .other-p-1:hover p{
+    color: black;
+  }
+  .comment-trainer{
+    margin-left: 230px;
+  }
+  .best-trainer-2{
+    margin-top: 12%;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(253,61,11);
+    width: 300px;
+    height: 50px;
+    background-color: rgb(255,236,232);
+    border-radius: 20px;
+    padding-top: 8px;
+    border: 1px solid rgb(253,61,11);
+  }
+  .comment-people{
+    margin-left: -500px;
+  }
+  .comment-img img{
+    border-radius: 50%;
+  }
+  .comment-img{
+    margin-top: 50px;
+    margin-left: 500px;
+    border-radius: 50%;
+    border: 2px solid rgb(253,61,11);
+    padding: 10px 10px 10px 10px;
+    width: 180px;
+    height: 180px;
+  }
+  .comment-people-p{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(16,22,28);
+    font-size: 25px;
+    margin-left: -700px;
+    margin-top: -165px;
+    cursor: pointer;
+  }
+  .comment-people-p:hover p{
+    color: rgb(253,61,11);
+  }
+  .comment-date-p{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(253,61,11);
+    font-size: 18px;
+    margin-left: -750px;
+  }
+  .comment-content-p{
+    color: rgb(119,119,119);
+    text-align: left;
+    width: 460px;
+    margin-left: 710px;
+  }
+  .comment-reply-p{
+    font-family: 'Catamaran', sans-serif;
+    border: 1px solid rgb(253,61,11);
+    background-color: rgb(253,61,11);
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 45px;
+    margin-left: 1060px;
+    margin-top: -135px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+  .comment-reply-p:hover p{
+    font-family: 'Catamaran', sans-serif;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 45px;
+    margin-top: -11px;
+    margin-left: -1px;
+    padding-top: 10px;
+  }
+  .bottom-comment{
+    margin-top: 150px;
+    border-bottom: 1px solid rgb(225,225,225);
+    width: 670px;
+  }
+  .login-box {
+    position: absolute;
+    top: 83%;
+    left: 62%;
+    width: 600px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  .login-box h2 {
+    padding: 0;
+    margin-bottom: 60px;
+    color: #fff;
+    text-align: left;
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .login-box .user-box {
+    position: relative;
+  }
+
+  .login-box .user-box input {
+    width: 100%;
+    margin-top: -10px;
+    font-size: 16px;
+    color: rgb(117,117,117);
+    margin-bottom: 30px;
+    border: none;
+    border: 1px solid #fff;
+    outline: none;
+    background-color: white;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.1);
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top: -5%;
+    left: 6%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(117,117,117);
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: 0;
+    left: 6%;
+    color: white;
+    font-size: 16px;
+    opacity: 0;
+  }
+  .table-plan-button-submit{
+    margin-top: 20px;
+    left: -5%;
+    border: unset;
+    border-radius: 17px;
+    border: 2px solid rgb(253,61,11);
+    color: white;
+    z-index: 1;
+    background: rgb(253,61,11);
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+    width: 520px;
+    height: 60px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 400ms;
+    overflow: hidden;
+  }
+
+  .table-plan-button-submit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: white;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 400ms
+  }
+  .table-plan-button-submit:hover {
+    color: rgb(253,61,11);
+  }
+
+  .table-plan-button-submit:hover::before {
+    width: 100%;
+  }
+
+
+
+
+  footer{
+    font-family: 'Catamaran', sans-serif;
+    width: 1600px;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+    top: 3150px;
+    margin-left: -220px;
+  }
+  footer .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  footer .row .col{
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  footer .row .col:nth-child(2), footer .row .col:nth-child(3){
+    flex-basis: 15%;
+  }
+  .footer-logo{
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  footer .row .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  footer .footer-ul .footer-li{
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  footer .footer-ul .footer-li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    width: 300px;
+    margin-bottom: 50px;
+  }
+  .footer-form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .footer-form .footer-input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+  .footer-form .footer-button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .footer-form .footer-button .fas{
+    font-size: 16px;
+    color: #ccc;
+  }
+  footer .social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    background: rgb(253,61,11);
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
+  .copyright{
+    padding-left: 32%;
+  }
+  .row .col .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+  }
+  footer .row .col .underline .footer-span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+  }
+  @keyframes moving {
+    0%{
+      left: -20px
+    }
+    100%{
+      left: 100%;
+    }
+  }
+  @media (max-width: 700px) {
+    footer{
+      bottom: unset;
+    }
+  }
+  .col-img i{
+    border: 1px solid rgb(253,61,11);
+    border-radius: 50%;
+    background-color: rgb(253,61,11);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  .col-p{
+    color: rgb(157,165,173);
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: -155px;
+    font-family: 'Catamaran', sans-serif;
+  }
+
+
+</style>
+
+<script src="https://kit.fontawesome.com/5c282fdeb6.js" crossorigin="anonymous"></script>
+

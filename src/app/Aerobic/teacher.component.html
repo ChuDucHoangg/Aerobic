@@ -1,16 +1,16 @@
 <div id="wrapper">
   <header>
     <div class="inner-header container">
-      <a routerLink="/home" id="logo">
+      <a routerLink="/home" (click)="onactive()" id="logo">
         <img class="imglogo" src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317007180_546482750284382_6161932256266949373_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=BUcrYwuop1kAX-tIfgf&_nc_ht=scontent.fhan18-1.fna&oh=03_AdSpxTHQaLCWKayX2Ip9GbwlM7tF8RrMLi7--yFkaEga4g&oe=63AF88D8" width="280px" height="80px" alt="">
       </a>
       <nav>
         <ul id="main-menu">
-          <li><a routerLink="/class">New Classes</a></li>
-          <li><a routerLink="/teacher" style="color: rgb(253,61,11)">Teachers</a></li>
-          <li><a routerLink="/book">Book</a></li>
-          <li><a routerLink="/course">Course</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
+          <li><a routerLink="/class" (click)="onactive()">New Classes</a></li>
+          <li><a routerLink="/teacher" (click)="onactive()" style="color: rgb(253,61,11)">Teachers</a></li>
+          <li><a routerLink="/book" (click)="onactive()">Book</a></li>
+          <li><a routerLink="/course" (click)="onactive()">Course</a></li>
+          <li><a routerLink="/contact" (click)="onactive()">Contact</a></li>
         </ul>
 
       </nav>
@@ -26,11 +26,323 @@
     </div>
   </header>
   <div id="banner">
-<!--    <img id="tenta" src="https://png.pngtree.com/background/20210711/original/pngtree-color-silhouette-aerobics-training-competition-poster-background-material-picture-image_1130476.jpg?fbclid=IwAR3srOKTIoGKtIj9NNoGdTXLo4QfgXHinIstIzw7UBFXRvJcCNbVkkaBdkQ" width="100%" height="600px" alt="">-->
+    <img id="tenta" src="https://2.bp.blogspot.com/-GwsaiE5uQDQ/WDy5e1xNciI/AAAAAAAAVZQ/gKnQ7bziA6IEbJe2GtmwoUrfCUWkG3stACLcB/s1600/Body-Building-Women-model-font-b-Fitness-b-font-font-b-gym-b-font-font-b.jpg" width="100%" height="600px" alt="">
   </div>
   <div id="content" class="container">
 
+    <div class="title-class">
+      <h1 class="h1-title">Teachers</h1>
+      <button class="button-class"><a routerLink="/home" (click)="onactive()" style="color: white">Home</a> > <a routerLink="/teacher" style="color: white">TEACHERS</a></button>
+    </div>
+
+    <div class="container-background">
+
+      <div class="best-trainer">
+      <div class="best-trainer-1" style="color: rgb(253,61,11);margin-left:15px;background-color: rgb(255,236,232);">
+        <p>TOP TEACHER</p>
+      </div>
+      <div class="professional" style="color: rgb(16,22,28);margin-top: -200px;margin-left: 15px;width: 600px;text-align: left;">
+        <p>Top Rated Teacher</p>
+      </div>
+        <div class="professional-p">
+          <p>There are countless experts out there who make a positive difference through aerobics, and in this list we have selected only 3 of the best aerobic teachers who share this precious gift come to everyone.</p>
+          <p style="padding-top: 10px;">They are the people who inspire us to change the way we live and how to take care of our health.</p>
+        </div>
+
+        <div class="professional-box">
+          <div class="professional-create">
+            <p>Page Creator:</p>
+            <p>ChuDucHoangg</p>
+          </div>
+          <div class="professional-admin">
+            <p>Admin:</p>
+            <p>TranMinhPhuoc</p>
+          </div>
+          <div class="professional-date">
+            <p>Date:</p>
+            <p>9,March,2022</p>
+          </div>
+          <div class="professional-tags">
+            <p>Category:</p>
+            <p>Aerobic, Healthy Mind</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="trainer-profile">
+        <div class="trainer-profile-img">
+         <div class="trainer-hover-1"> <a routerLink="/teachercross" (click)="onactive()"><p>Show More</p></a></div>
+        <img src="https://elementor.zozothemes.com/stamin/wp-content/uploads/sites/5/2019/04/team-2-1-450x450.jpg" width="380px" height="400px">
+          </div>
+        <div class="trainer-profile-information">
+          <p class="physical">Leader Teacher</p>
+          <p class="profile-name">Steve Cross</p>
+          <i id="facebook-brands" class="fa-brands fa-facebook-f"></i>
+          <i id="ins-brands" style="margin-left: 10px" class="fa-brands fa-twitter"></i>
+          <i id="twr-brands" style="margin-left: 10px" class="fa-brands fa-instagram"></i>
+          <i id="urs-brands" style="margin-left: 10px" class="fa-solid fa-user"></i>
+        </div>
+        <div class="trainer-profile-1">
+        <div class="trainer-profile-img" style="padding-top: 50px;">
+          <div class="trainer-hover-1" style="margin-left: 945px;top: 575px;"><a routerLink="/teacherdavid" (click)="onactive()"><p>Show More</p></a></div>
+          <img src="https://f7-zpcloud.zdn.vn/371238593493156483/a8e8a7a0a875712b2864.jpg" width="380px" height="400px">
+        </div>
+        <div class="trainer-profile-information-1">
+          <p class="physical">Conduct Teacher</p>
+          <p class="profile-name">David Villa</p>
+          <i  class="fa-brands fa-facebook-f"></i>
+          <i  style="margin-left: 10px" class="fa-brands fa-twitter"></i>
+          <i style="margin-left: 10px" class="fa-brands fa-instagram"></i>
+          <i style="margin-left: 10px" class="fa-solid fa-user"></i>
+        </div>
+        </div>
+          <div class="trainer-profile-2">
+        <div class="trainer-profile-img" style="padding-top: 50px;">
+          <div class="trainer-hover-1" style="margin-left: 520px;top: 645px;"><a routerLink="/teacherwill" (click)="onactive()"><p>Show More</p></a></div>
+          <img src="https://elementor.zozothemes.com/stamin/wp-content/uploads/sites/5/2019/04/team-1-1-450x450.jpg" width="380px" height="400px">
+        </div>
+        <div class="trainer-profile-information-2">
+          <p class="physical">Manager Teacher</p>
+          <p class="profile-name">Will Sparks</p>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i style="margin-left: 10px" class="fa-brands fa-twitter"></i>
+          <i style="margin-left: 10px" class="fa-brands fa-instagram"></i>
+          <i style="margin-left: 10px" class="fa-solid fa-user"></i>
+        </div>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="all-background">
+      <div class="best-trainer-2">
+        <p>ALL TEACHERS</p>
+      </div>
+      <div class="professional-1">
+        <p>All Our Active Teachers</p>
+      </div>
+
+      <div class="all-background-profile">
+        <div class="all-background-profile-1">
+        <div class="all-background-profile-img"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer8.jpg"></div>
+         <a routerLink="/teacherconbruce" (click)="onactive()"><p>Bruce Bailey</p></a>
+          <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p>
+        <div class="fa-brand-p">
+       <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+        <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+        <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+        </div>
+
+          <div class="all-background-profile-2">
+            <div class="all-background-profile-img-1"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer7.jpg"></div>
+            <a routerLink="/teacherconzahra" (click)="onactive()"><p>Manny Johnes</p></a>
+            <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p>
+            <div class="fa-brand-p">
+              <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+              <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+              <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+            </div>
+
+            <div class="all-background-profile-3">
+              <div class="all-background-profile-img-2"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer6.jpg"></div>
+              <a routerLink="/teacherconhill" (click)="onactive()"><p>Steven Hill</p></a>
+              <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p>
+              <div class="fa-brand-p">
+                <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+                <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+                <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+              </div>
+
+              <div class="all-background-profile-4">
+                <div class="all-background-profile-img-3"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer5.jpg"></div>
+                <a routerLink="/teacherconruth" (click)="onactive()"><p>Ruth Edwards</p></a>
+                <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p>
+                <div class="fa-brand-p">
+                  <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+                  <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+                  <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+                </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+        <div class="all-background-profile-1">
+          <div class="all-background-profile-img-4"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer4.jpg"></div>
+         <a routerLink="/teachermanny" (click)="onactive()"><p>Zahra Sharif</p></a>
+          <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p>
+          <div class="fa-brand-p">
+            <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+            <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+            <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+          </div>
+
+          <div class="all-background-profile-2">
+            <div class="all-background-profile-img-5"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer3.jpg"></div>
+           <a routerLink="/teacherconjohn" (click)="onactive()"><p>John Hard</p></a>
+            <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p>
+            <div class="fa-brand-p">
+              <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+              <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+              <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+            </div>
+
+            <div class="all-background-profile-3">
+              <div class="all-background-profile-img-6"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer2.jpg"></div>
+              <a routerLink="/teacherconkate" (click)="onactive()"><p>Kate Johnson</p></a>
+              <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p>
+              <div class="fa-brand-p">
+                <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+                <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+                <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+              </div>
+
+              <div class="all-background-profile-4">
+                <div class="all-background-profile-img-7"><img src="https://shivaaythemes.in/fithub-demo/assets/images/trainer1.jpg"></div>
+                <a routerLink="/teacherconantony" (click)="onactive()"><p>Desert Antony</p></a>
+                <p style="margin-top: -30px;font-size: 15px;color:rgb(119,119,119);">Finess Teacher</p>
+                <div class="fa-brand-p">
+                  <p class="fa-brand"><i class="fa-brands fa-facebook-f"></i></p>
+                  <p class="fa-brand-1"><i style="margin-left: 10px" class="fa-brands fa-twitter"></i></p>
+                  <p class="fa-brand-2"><i style="margin-left: 120px" class="fa-brands fa-instagram"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+</div>
+    </div>
+
+    <div class="our-schedule">
+      <div class="best-trainer-our">
+      <div class="best-trainer-2" style="color: rgb(253,61,11);margin-left:15px;background-color: rgb(255,236,232);border: 1px solid rgb(255,236,232);">
+        <p>OUR TIMETABLE</p>
+      </div>
+      <div class="professional" style="color: rgb(16,22,28);margin-top: -200px;margin-left: -280px;width: 800px;">
+        <p>Check Out Our Timetable</p>
+      </div>
+      </div>
+
+      <div class="box-border-time" style="display: flex;margin-top: 40px;">
+      <div class="box-time" style="padding-top: 25px;margin-left: 11%;border: 1px solid rgb(20,27,34);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(20,27,34)"> <img src="https://shivaaythemes.in/fithub-demo/assets/images/clock-1.png"></div>
+        <div class="box-time-1" style="padding-top: 30px;margin-left: 5px;border: 1px solid rgb(20,27,34);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(20,27,34)"> <div class="box-p-1"><p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">Monday</p></div></div>
+        <div class="box-time-2" style="padding-top: 30px;margin-left: 5px;border: 1px solid rgb(20,27,34);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(20,27,34)"> <div class="box-p-2"><p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">Tuesday</p></div></div>
+        <div class="box-time-3" style="padding-top: 30px;margin-left: 5px;border: 1px solid rgb(20,27,34);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(20,27,34)"> <div class="box-p-3"><p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">Wednesday</p></div></div>
+        <div class="box-time-4" style="padding-top: 30px;margin-left: 5px;border: 1px solid rgb(20,27,34);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(20,27,34)"> <div class="box-p-4"><p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">Thursday</p></div></div>
+        <div class="box-time-5" style="padding-top: 30px;margin-left: 5px;border: 1px solid rgb(20,27,34);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(20,27,34)"> <div class="box-p-5"><p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">Friday</p></div></div>
+        <div class="box-time-6" style="padding-top: 30px;margin-left: 5px;border: 1px solid rgb(20,27,34);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(20,27,34)"> <div class="box-p-6"><p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">Saturday</p></div></div>
+      </div>
+
+        <div class="box-border-time-2" style="display: flex;margin-top: 10px;">
+        <div class="box-time-7" style="padding-top: 30px;margin-left: 11%;border: 1px solid rgb(253,61,11);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(253,61,11)"> <p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">8:00 Am</p></div>
+        <div class="box-time-8" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-8"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Heat Up</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Desert Antony</p></div></div>
+        <div class="box-time-9" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-9"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Aerobic Dance</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">John Hard</p></div></div>
+        <div class="box-time-10" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-10"></div></div>
+        <div class="box-time-11" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-11"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Power Aerobic</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Zahra Sharif</p></div></div>
+        <div class="box-time-12" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-12"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Aerobics</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Kate Johnson</p></div></div>
+        <div class="box-time-13" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-13"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Meditation</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Manny Johnes</p></div></div>
+      </div>
+
+      <div class="box-border-time-3" style="display: flex;margin-top: 10px;">
+        <div class="box-time-14" style="padding-top: 30px;margin-left: 11%;border: 1px solid rgb(253,61,11);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(253,61,11)"> <p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">10:00 Am</p></div>
+        <div class="box-time-15" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-15"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Aerobics</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Kate Johnson</p></div></div>
+        <div class="box-time-16" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-16"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Power Aerobic</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Zahra Sharif</p></div></div>
+        <div class="box-time-17" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-17"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Heat Up</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Desert Antony</p></div></div>
+        <div class="box-time-18" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-18"></div></div>
+        <div class="box-time-19" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-19"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Aerobic Dance</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">John Hard</p></div></div>
+        <div class="box-time-20" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-20"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Power Aerobic</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Zahra Sharif</p></div></div>
+      </div>
+
+      <div class="box-border-time-4" style="display: flex;margin-top: 10px;">
+        <div class="box-time-21" style="padding-top: 30px;margin-left: 11%;border: 1px solid rgb(253,61,11);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(253,61,11)"> <p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">12:00 Pm</p></div>
+        <div class="box-time-22" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-22"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Heavy Training</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">John Hard</p></div></div>
+        <div class="box-time-23" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-23"></div></div>
+        <div class="box-time-24" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-24"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Aerobics</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Kate Johnson</p></div></div>
+        <div class="box-time-25" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-25"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Aerobic Dance</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Steven Hill</p></div></div>
+        <div class="box-time-26" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-26"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Heat Up</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Desert Antony</p></div></div>
+        <div class="box-time-27" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-27"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Aerobics</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Kate Johnson</p></div></div>
+      </div>
+
+      <div class="box-border-time-2" style="display: flex;margin-top: 10px;">
+        <div class="box-time-28" style="padding-top: 30px;margin-left: 11%;border: 1px solid rgb(253,61,11);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(253,61,11)"> <p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">5:00 Am</p></div>
+        <div class="box-time-29" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-29"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Power Aerobics</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Zahra Sharif</p></div></div>
+        <div class="box-time-30" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-30"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Heat Up</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Desert Antony</p></div></div>
+        <div class="box-time-31" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-31"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Aerobic Dance</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Steven Hill</p></div></div>
+        <div class="box-time-32" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-32"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Heavy Training</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">John Hard</p></div></div>
+        <div class="box-time-33" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-33"></div></div>
+        <div class="box-time-34" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-34"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Meditation</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Manny Johnes</p></div></div>
+      </div>
+
+      <div class="box-border-time-2" style="display: flex;margin-top: 10px;">
+        <div class="box-time-35" style="padding-top: 30px;margin-left: 11%;border: 1px solid rgb(253,61,11);width: 180px;height: 100px;border-radius: 15px;background-color: rgb(253,61,11)"> <p style="color: white;font-family: 'Catamaran', sans-serif;font-size: 25px">8:00 Pm</p></div>
+        <div class="box-time-36" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-36"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Meditation</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Manny Johnes</p></div></div>
+        <div class="box-time-37" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-37"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Aerobics</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">John Hard</p></div></div>
+        <div class="box-time-38" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-38"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Aerobic dance</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Steven Hill</p></div></div>
+        <div class="box-time-39" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-39"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Meditation</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Manny Johnes</p></div></div>
+        <div class="box-time-40" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"> <div class="box-p-40"><p style="color: rgb(16,22,28);font-family: 'Catamaran', sans-serif;font-size: 22px">Heat Up</p><p style="color: rgb(119,119,119);font-family: 'Catamaran', sans-serif;font-size: 15px;">Desert Antony</p></div></div>
+        <div class="box-time-41" style="padding-top: 20px;margin-left: 5px;border: 1px solid rgb(215,215,215);width: 180px;height: 100px;border-radius: 15px;background-color: white"><div class="box-p-41"></div> </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317007180_546482750284382_6161932256266949373_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=BUcrYwuop1kAX-tIfgf&_nc_ht=scontent.fhan18-1.fna&oh=03_AdSpxTHQaLCWKayX2Ip9GbwlM7tF8RrMLi7--yFkaEga4g&oe=63AF88D8" class="footer-logo" alt="">
+          <p style="margin-left: -250px;">
+            <img src="https://shivaaythemes.in/fithub-demo/assets/images/clock-2.png">
+          <p style="font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: -35px;margin-left: -80px;">Monday - Friday</p>
+          <p style="color: rgb(163,171,179);font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 0px;margin-left: -65px;">7:00Am - 10:00Pm</p>
+
+          <p style="font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 20px;margin-left: -65px;">Saturday - Sunday</p>
+          <p style="color: rgb(163,171,179);font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 0px;margin-left: -65px;">7:00Am - 2:00Pm</p>
+        </div>
+        <div class="col" style="font-size: 15px;text-align: left">
+          <h3 style="font-size: 25px;font-weight: bold;">Office <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+          <a href="https://www.google.com/maps/place/8+T%C3%B4n+Th%E1%BA%A5t+Thuy%E1%BA%BFt,+M%E1%BB%B9+%C4%90%C3%ACnh,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0288058,105.7804978,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab4cd0c66f05:0xea31563511af2e54!8m2!3d21.0288058!4d105.7826865"><div class="col-img"><i style="color: white;" class="fa-solid fa-location-dot"></i></div></a>
+          <div class="col-img"><i style="color: white;margin-top: 25px" class="fa-regular fa-envelope"></i></div>
+          <div class="col-img"><i style="color: white;margin-top: 25px" class="fa-solid fa-phone"></i></div>
+          <div class="col-p">
+            <p >So 8, TonThatThuyet</p>
+            <p>Ha Noi, Viet Nam</p>
+            <p class="email-id">info@ygmail.com</p>
+            <p class="email-id" style="margin-top: -18px;">aerobicfighter@ygmail.com</p>
+          </div>
+          <h4 style="color: rgb(157,165,173);font-size: 15px;padding-left: 48px;">1800-121-3637</h4>
+          <h4 style="color: rgb(157,165,173);font-size: 15px;padding-left: 48px;">+84 0981578920</h4>
+        </div>
+        <div class="col" style="font-size: 15px;text-align: left">
+          <h3  style="font-size: 25px;font-weight: bold;">Links <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+          <ul class="footer-ul">
+            <li class="footer-li"><a routerLink="/home" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Home</a></li>
+            <li class="footer-li"><a routerLink="/class" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Classes</a></li>
+            <li class="footer-li"><a routerLink="/teacher" (click)="onactive()" class="footer-a" style="color: rgb(252,60,8)">Teachers</a></li>
+            <li class="footer-li"><a routerLink="/book" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173);">Book</a></li>
+            <li class="footer-li"><a routerLink="/course" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Course</a></li>
+          </ul>
+        </div>
+        <div class="col" style="font-size: 15px;font-weight: bold;">
+          <h3>NewsLetter <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+          <form class="footer-form">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" class="footer-input" placeholder="Enter your email id" required>
+            <button type="submit" class="footer-button"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="social-icons" style="text-align: left">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="width: 100%;">
+      <p class="copyright"  style="font-size: 20px;margin-left: -580px;">Easy Tutorials © 2022<span style="color: rgb(253,61,11);"> Aerobic Fighter</span> - All Rights Reserved</p>
+    </footer>
+  </div>
+</div>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/1744f3f671.js"></script>
@@ -38,6 +350,7 @@
 
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap');
     *{
       padding: 0;
       margin: 0;
@@ -221,6 +534,7 @@
       justify-content: flex-end;
     }
     ul#main-menu a{
+      font-family: 'Catamaran', sans-serif;
       text-transform: uppercase;
       padding: 10px 20px;
       /*color: #1fa3dd;*/
@@ -235,6 +549,815 @@
       opacity: 0.8;
       position: fixed;
     }
+    .title-class{
+      font-family: 'Catamaran', sans-serif;
+      position: absolute;
+      top: 45%;
+      left: 14%;
+      display: flex;
+      animation: textFly 3s forwards;
+    }
+    .h1-title {
+      font-size: 80px;
+      color:  white;
+      font-weight: 900;
+      line-height: 90px;
+
+    }
+    @keyframes  textFly {
+      from {
+        top: 40%;
+        opacity: 0;
+      }
+      to {
+        top: 45%;
+        opacity: 1;
+      }
+    }
+    .button-class{
+      margin-top: 100px;
+      margin-left: -325px;
+      width: 180px;
+      height: 45px;
+      border: 1px solid rgb(253,61,11);
+      border-radius: 10px;
+      background: rgb(253,61,11);
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      word-spacing: 10px;
+      color:  white;
+    }
+    .container-background{
+      position: absolute;
+      top: 96%;
+      left: -10%;
+      background-color: white;
+      width: 2000px;
+      height: 1200px;
+    }
+    .best-trainer{
+      margin-left: 15%;
+    }
+    .best-trainer-1{
+      margin-top: 5%;
+      font-family: 'Catamaran', sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      color: rgb(253,61,11);
+      border: 1px solid rgb(255,236,232);
+      width: 200px;
+      height: 50px;
+      background-color: rgb(45,31,34);
+      border-radius: 20px;
+      padding-top: 8px;
+    }
+    .best-trainer-our{
+      margin-left: 750px;
+    }
+    .best-trainer-2{
+      margin-top: 5%;
+      font-family: 'Catamaran', sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      color: rgb(253,61,11);
+      width: 400px;
+      height: 50px;
+      background-color: rgb(255,236,232);
+      border-radius: 20px;
+      padding-top: 8px;
+      border: 1px solid rgb(253,61,11);
+    }
+    .professional{
+      font-family: 'Catamaran', sans-serif;
+      font-size: 65px;
+      color: white;
+      line-height: 70px;
+      font-weight: 800;
+      padding-top: 230px;
+    }
+    .professional-p{
+      font-family: 'Catamaran', sans-serif;
+      color:rgb(159,159,159);
+      margin-left: 15px;
+      padding-top: 30px;
+      text-align: left;
+      width: 520px;
+    }
+    .professional-box{
+      border: 1px solid rgb(253,61,11);
+      width: 550px;
+      height: 250px;
+      margin-left: 630px;
+      margin-top: -240px;
+      background-color: rgb(253,61,11);
+      border-radius: 15px;
+    }
+    .professional-create{
+      font-family: 'Catamaran', sans-serif;
+      color: white;
+      text-align: left;
+      font-size: 18px;
+      padding-top: 50px;
+      padding-left: 50px;
+    }
+    .professional-admin{
+      font-family: 'Catamaran', sans-serif;
+      color: white;
+      text-align: left;
+      font-size: 18px;
+      margin-top: -52px;
+      padding-left: 300px;
+    }
+    .professional-date{
+      font-family: 'Catamaran', sans-serif;
+      color: white;
+      text-align: left;
+      font-size: 18px;
+      padding-top: 40px;
+      padding-left: 50px;
+    }
+    .professional-tags{
+      font-family: 'Catamaran', sans-serif;
+      color: white;
+      text-align: left;
+      font-size: 18px;
+      margin-top: -52px;
+      padding-left: 300px;
+    }
+    .trainer-profile-img{
+      margin-left: -1120px;
+      margin-top: 100px;
+    }
+    .trainer-hover-1{
+      border:1px solid rgb(161,148,148);
+      width: 380px;
+      height: 400px;
+      margin-left: 1370px;
+      background-color: rgba(50, 19, 17, 0.4);
+      position: absolute;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    .trainer-profile-img:hover .trainer-hover-1{
+      bottom: 295px;
+      opacity: 1;
+    }
+    .trainer-hover-1 p{
+      font-family: 'Catamaran', sans-serif;
+      border: 1px solid rgb(253,61,11);
+      border-radius: 15px;
+      color: white;
+      width: 140px;
+      height: 40px;
+      margin-left: 120px;
+      margin-top: 300px;
+      background-color: rgb(253,61,11);
+      padding-top: 7px;
+    }
+    .trainer-profile-information{
+      font-family: 'Catamaran', sans-serif;
+      margin-left: 270px;
+      margin-top: -50px;
+      border: 1px solid white;
+      background-color: white;
+      color: black;
+      height: 150px;
+      width: 340px;
+      position: absolute;
+      box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    }
+    .physical{
+      color: rgb(253,61,11);
+      margin-top: 10px;
+    }
+    .profile-name{
+      font-size: 26px;
+    }
+    .trainer-profile-information i{
+      border: 3px solid rgb(253,61,11);
+      border-radius: 50%;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      margin-top: 10px;
+      padding-top: 8px;
+    }
+    .trainer-profile-1{
+      margin-left: 850px;
+      margin-top: -480px;
+    }
+    .trainer-profile-information-1{
+      font-family: 'Catamaran', sans-serif;
+      margin-left:-155px;
+      margin-top: -50px;
+      border: 1px solid white;
+      background-color: white;
+      color: black;
+      height: 150px;
+      width: 340px;
+      position: absolute;
+      box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    }
+    .trainer-profile-information-1 i{
+      border: 3px solid rgb(253,61,11);
+      border-radius: 50%;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      margin-top: 10px;
+      padding-top: 8px;
+    }
+    .trainer-profile-information:hover .profile-name{
+      color: rgb(253,61,11);
+    }
+    .trainer-profile-information-1:hover .profile-name{
+      color: rgb(253,61,11);
+    }
+    .trainer-profile-information-2:hover .profile-name{
+      color: rgb(253,61,11);
+    }
+    .trainer-profile-2{
+      margin-left: 1700px;
+      margin-top: -480px;
+    }
+    .trainer-profile-information-2{
+      font-family: 'Catamaran', sans-serif;
+      margin-left:-580px;
+      margin-top: -50px;
+      border: 1px solid white;
+      background-color: white;
+      color: black;
+      height: 150px;
+      width: 340px;
+      position: absolute;
+      box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+
+    }
+    .trainer-profile-information-2 i{
+      border: 3px solid rgb(253,61,11);
+      border-radius: 50%;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      margin-top: 10px;
+      padding-top: 8px;
+    }
+    .all-background{
+      position: absolute;
+      top: 248%;
+      left: -10%;
+      background-color: rgb(20,27,33);
+      width: 2000px;
+      height: 1500px;
+    }
+    .best-trainer-2{
+      margin-top: 100px;
+      margin-left: 38%;
+      font-family: 'Catamaran', sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      color: rgb(253,61,11);
+      border: 1px solid rgb(45,31,34);
+      width: 200px;
+      height: 50px;
+      background-color: rgb(45,31,34);
+      border-radius: 20px;
+      padding-top: 8px;
+    }
+    .professional-1{
+      font-family: 'Catamaran', sans-serif;
+      font-size: 65px;
+      color: white;
+      line-height: 70px;
+      font-weight: 800;
+      margin-left: -250px;
+      padding-top: 50px;
+    }
+    .all-background-profile{
+      margin-top: 50px;
+      margin-left: -1330px;
+    }
+    .all-background-profile-1{
+      margin-top: 50px;
+    }
+    .all-background-profile-2{
+      margin-left: 700px;
+      margin-top: -455px;
+    }
+    .all-background-profile-3{
+      margin-left: 700px;
+      margin-top: -455px;
+    }
+    .all-background-profile-4{
+      margin-left: 700px;
+      margin-top: -455px;
+    }
+    .all-background-profile img{
+      border-radius: 50%;
+      border: 10px solid rgb(119,119,119);
+      padding: 18px 18px 18px 18px;
+      width: 300px;
+      transition: all 0.2s;
+      overflow: hidden;
+    }
+    .all-background-profile p{
+      font-family: 'Catamaran', sans-serif;
+      font-size: 25px;
+      padding-top: 30px;
+      color: white;
+    }
+    .all-background-profile i{
+      margin-top: 25px;
+      border: 1px solid rgb(253,61,11);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      color: rgb(253,61,11);
+      font-size: 20px;
+      padding-top: 8px;
+    }
+    .fa-brand{
+      margin-top: -30px;
+      margin-left: -100px;
+      cursor: pointer;
+    }
+    .fa-brand-1{
+      margin-top: -95px;
+      cursor: pointer;
+    }
+    .fa-brand-2{
+      margin-top: -95px;
+      cursor: pointer;
+    }
+    .fa-brand-p:hover i{
+      background-color: rgb(253,61,11);
+      color: white;
+      border: 1px solid rgb(253,61,11);
+    }
+    .all-background-profile-img:hover img{
+      transform: scale(1.05);
+      border-radius: 50%;
+      border: 10px solid rgb(253,61,11);
+      padding: 10px 10px 10px 10px;
+      width: 300px;
+    }
+    .all-background-profile-img-1:hover img{
+      transform: scale(1.05);
+      border-radius: 50%;
+      border: 10px solid rgb(253,61,11);
+      padding: 10px 10px 10px 10px;
+      width: 300px;
+    }
+    .all-background-profile-img-2:hover img{
+      transform: scale(1.05);
+      border-radius: 50%;
+      border: 10px solid rgb(253,61,11);
+      padding: 10px 10px 10px 10px;
+      width: 300px;
+    }
+    .all-background-profile-img-3:hover img{
+      transform: scale(1.05);
+      border-radius: 50%;
+      border: 10px solid rgb(253,61,11);
+      padding: 10px 10px 10px 10px;
+      width: 300px;
+    }
+    .all-background-profile-img-4:hover img{
+      transform: scale(1.05);
+      border-radius: 50%;
+      border: 10px solid rgb(253,61,11);
+      padding: 10px 10px 10px 10px;
+      width: 300px;
+    }
+    .all-background-profile-img-5:hover img{
+      transform: scale(1.05);
+      border-radius: 50%;
+      border: 10px solid rgb(253,61,11);
+      padding: 10px 10px 10px 10px;
+      width: 300px;
+    }
+    .all-background-profile-img-6:hover img{
+      transform: scale(1.05);
+      border-radius: 50%;
+      border: 10px solid rgb(253,61,11);
+      padding: 10px 10px 10px 10px;
+      width: 300px;
+    }
+    .all-background-profile-img-7:hover img{
+      transform: scale(1.05);
+      border-radius: 50%;
+      border: 10px solid rgb(253,61,11);
+      padding: 10px 10px 10px 10px;
+      width: 300px;
+    }
+    .our-schedule{
+      background-color: rgb(253,253,253);
+      width: 2000px;
+      height: 1100px;
+      top: 430%;
+      left: -10%;
+      position: absolute;
+    }
+    .box-time-8:hover .box-p-8{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-9:hover .box-p-9{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-10:hover .box-p-10{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-11:hover .box-p-11{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-12:hover .box-p-12{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-13:hover .box-p-13{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-15:hover .box-p-15{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-16:hover .box-p-16{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-17:hover .box-p-17{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-18:hover .box-p-18{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-19:hover .box-p-19{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-20:hover .box-p-20{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-21:hover .box-p-21{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-22:hover .box-p-22{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-23:hover .box-p-23{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-24:hover .box-p-24{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-25:hover .box-p-25{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-26:hover .box-p-26{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-27:hover .box-p-27{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-29:hover .box-p-29{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-30:hover .box-p-30{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-31:hover .box-p-31{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-32:hover .box-p-32{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-33:hover .box-p-33{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-34:hover .box-p-34{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-36:hover .box-p-36{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-37:hover .box-p-37{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-38:hover .box-p-38{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-39:hover .box-p-39{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-40:hover .box-p-40{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    .box-time-41:hover .box-p-41{
+      margin-top: -21px;
+      border: 1px solid red;
+      height: 100px;
+      border-radius: 15px;
+      padding-top: 20px;
+      box-shadow: 4px 8px 19px -3px rgb(0 0 0 / 27%);
+    }
+    footer{
+      font-family: 'Catamaran', sans-serif;
+      width: 1600px;
+      background: linear-gradient(to right, #00093c, #2d0b00);
+      color: #fff;
+      padding: 100px 0 30px;
+      font-size: 13px;
+      line-height: 20px;
+      position: relative;
+      top: 4450px;
+      margin-left: -220px;
+    }
+    footer .row{
+      width: 85%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    footer .row .col{
+      flex-basis: 25%;
+      padding: 10px;
+    }
+    footer .row .col:nth-child(2), footer .row .col:nth-child(3){
+      flex-basis: 15%;
+    }
+    .footer-logo{
+      width: 80%;
+      margin-bottom: 30px;
+    }
+    footer .row .col h3{
+      width: fit-content;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .email-id{
+      width: fit-content;
+      border-bottom: 1px solid #ccc;
+      margin: 20px 0;
+    }
+    footer .footer-ul .footer-li{
+      list-style: none;
+      margin-bottom: 12px;
+    }
+    footer .footer-ul .footer-li a{
+      text-decoration: none;
+      color: #fff;
+    }
+    .footer-form{
+      padding-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+      width: 300px;
+      margin-bottom: 50px;
+    }
+    .footer-form .fa-regular{
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    .footer-form .footer-input{
+      width: 100%;
+      background: transparent;
+      color: #ccc;
+      border: 0;
+      outline: none;
+    }
+    .footer-form .footer-button{
+      background: transparent;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+    }
+    .footer-form .footer-button .fas{
+      font-size: 16px;
+      color: #ccc;
+    }
+    footer .social-icons .fa-brands{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      font-size: 20px;
+      color: white;
+      background: rgb(253,61,11);
+      margin-right: 15px;
+      cursor: pointer;
+    }
+    hr{
+      width: 90%;
+      border: 0;
+      border-bottom: 1px solid #ccc;
+      margin: 20px auto;
+    }
+    .copyright{
+      padding-left: 32%;
+    }
+    .row .col .underline{
+      width: 100%;
+      height: 5px;
+      background: #767676;
+      border-radius: 3px;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      overflow: hidden;
+    }
+    footer .row .col .underline .footer-span{
+      width: 15px;
+      height: 100%;
+      background: #fff;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0%{
+        left: -20px
+      }
+      100%{
+        left: 100%;
+      }
+    }
+    @media (max-width: 700px) {
+      footer{
+        bottom: unset;
+      }
+    }
+    .col-img i{
+      border: 1px solid rgb(253,61,11);
+      border-radius: 50%;
+      background-color: rgb(253,61,11);
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      padding-top: 5px;
+      font-size: 20px;
+    }
+    .col-p{
+      color: rgb(157,165,173);
+      font-size: 15px;
+      margin-left: 50px;
+      margin-top: -155px;
+      font-family: 'Catamaran', sans-serif;
+    }
+
   </style>
 
   <script src="https://kit.fontawesome.com/5c282fdeb6.js" crossorigin="anonymous"></script>

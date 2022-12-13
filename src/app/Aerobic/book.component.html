@@ -6,11 +6,11 @@
       </a>
       <nav>
         <ul id="main-menu">
-          <li><a routerLink="/class">New Classes</a></li>
-          <li><a routerLink="/teacher">Teachers</a></li>
-          <li><a routerLink="/book" style="color: rgb(253,61,11)">Book</a></li>
-          <li><a routerLink="/course">Course</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
+          <li><a routerLink="/class" (click)="onactive()">New Classes</a></li>
+          <li><a routerLink="/teacher" (click)="onactive()">Teachers</a></li>
+          <li><a routerLink="/book" (click)="onactive()" style="color: rgb(253,61,11)">Book</a></li>
+          <li><a routerLink="/course" (click)="onactive()">Course</a></li>
+          <li><a routerLink="/contact" (click)="onactive()">Contact</a></li>
         </ul>
 
       </nav>
@@ -27,20 +27,22 @@
   </header>
   <div id="banner">
         <img id="tenta" src="https://listsach.com/wp-content/uploads/2020/05/bia-sach-dep-top-sach-hay-bia-dep-tang-ban-be-nguoi-yeu.jpg" alt="">
-    <div class="book">
-      <h1 style="color: white;font-weight: 700;font-family: 'Be Vietnam Pro', sans-serif;font-size:40px;">Book</h1><p style="visibility: hidden">v</p>
-      <a style="color: rgb(119,181,214);word-spacing: 5px;font-size: 20px" href="">Home > Book</a>
     </div>
   </div>
   <div class="content">
 
-    <div class="table-of-content">
-    <h4 class="main-filter">FILTER BY PRICE</h4>
+    <div class="title-class">
+      <h1 class="h1-title">Book</h1>
+      <button class="button-class"><a routerLink="/home" style="color: white">Home</a> > <a routerLink="/book" style="color: white">Book</a></button>
+    </div>
+
+    <div class="table-of-content" >
+    <h4 class="main-filter" style="font-family: 'Catamaran', sans-serif;">FILTER BY PRICE</h4>
 
 
       <div class="content-product">
         <img class="product-img" src="https://f8-zpcloud.zdn.vn/7612508586138875751/5df8afdd98fa41a418eb.jpg" width="150px" height="220px" alt="">
-        <h5>Learning Aerobic</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Learning Aerobic</h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
         <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -50,14 +52,14 @@
         <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-        <span class="shop-price">£20.00</span>
-        <button id="button-id" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+        <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$13.05</span>
+        <button id="button-id" class="button button1"><p style="margin-top: -4px">See Now</p></button>
       </div>
       </div>
       <div class="content-product-1">
         <img class="product-img" src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/316582829_908722970538313_3215279149054373417_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Hinwo9o9mLIAX8AupvT&_nc_ht=scontent.fhan18-1.fna&oh=03_AdRHEQMAiBKqVquOy5Bob7CggzdlHYCau9knmzHEeeCpgg&oe=63AD7DA9" width="150px" height="220px" alt="">
-        <h5>Introduce Aerobic</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Introduce </h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -67,14 +69,14 @@
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-          <span class="shop-price">£15.00</span>
-          <button id="button-id-1" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+          <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$15.00</span>
+          <button id="button-id-1" class="button button1"><p style="margin-top: -4px">See Now</p></button>
         </div>
       </div>
       <div class="content-product-2">
         <img class="product-img" src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317150061_888389268813707_6314069925013351746_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=mju18XRLM6MAX9mEhLn&tn=XQPbk4z_W2VszIlc&_nc_ht=scontent.fhan18-1.fna&oh=03_AdTDrIqP2u_TsuBYiSlFbqz_Oz64l9WdwmRKINYFCViUVQ&oe=63AD64DE" width="150px" height="220px" alt="">
-        <h5>Aerobic Benifit</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Benifit</h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -84,16 +86,16 @@
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-          <span class="shop-price">£22.00</span>
-          <button id="button-id-2" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+          <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$22.00</span>
+          <button id="button-id-2" class="button button1"><p style="margin-top: -4px">See Now</p></button>
         </div>
       </div>
 
 
       <div class="content-product-3">
         <img class="product-img" src="https://b-f8-zpcloud.zdn.vn/8747774546935962631/32b439920eb5d7eb8ea4.jpg" width="150px" height="220px" alt="">
-        <h5>Maintain Aerobic</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Maintain</h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
         <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -103,14 +105,14 @@
         <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-        <span class="shop-price">£20.00</span>
-        <button id="button-id-3" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+        <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$15.00</span>
+        <button id="button-id-3" class="button button1"><p style="margin-top: -4px">See Now</p></button>
       </div>
       </div>
       <div class="content-product-4">
         <img class="product-img" src="https://b-f8-zpcloud.zdn.vn/7302194850643825487/662a6e165931806fd920.jpg" width="150px" height="220px" alt="">
-        <h5>Advanced </h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Advanced </h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -120,14 +122,14 @@
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-          <span class="shop-price">£15.00</span>
-          <button id="button-id-4" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+          <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$18.00</span>
+          <button id="button-id-4" class="button button1"><p style="margin-top: -4px">See Now</p></button>
         </div>
       </div>
       <div class="content-product-5">
         <img class="product-img" src="https://b-f7-zpcloud.zdn.vn/4271173511396052265/6435c10af62d2f73763c.jpg" width="150px" height="220px" alt="">
-        <h5>Practice Place</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Practice Place</h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -137,16 +139,16 @@
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-          <span class="shop-price">£22.00</span>
-          <button id="button-id-5" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+          <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$22.00</span>
+          <button id="button-id-5" class="button button1"><p style="margin-top: -4px">See Now</p></button>
         </div>
       </div>
 
 
       <div class="content-product-6">
         <img class="product-img" src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/316458748_683165153196744_852170749644190066_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=KHK6vf8GsQQAX_WWzta&_nc_ht=scontent.fhan18-1.fna&oh=03_AdS3iV5-RDlgIXcbiNeoV1xcQ5HokMF3jNKVRN8qG6ojMg&oe=63AD731D" width="150px" height="220px" alt="">
-        <h5>Learning Aerobic</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Learning Aerobic</h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
         <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -156,14 +158,14 @@
         <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-        <span class="shop-price">£20.00</span>
-        <button id="button-id-6" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+        <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$14.00</span>
+        <button id="button-id-6" class="button button1"><p style="margin-top: -4px">See Now</p></button>
       </div>
       </div>
       <div class="content-product-7">
         <img class="product-img" src="https://f8-zpcloud.zdn.vn/4565994122309664994/008367b3509489cad085.jpg" width="150px" height="220px" alt="">
-        <h5>Aerobic Body</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Aerobic Body</h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -173,14 +175,14 @@
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-          <span class="shop-price">£15.00</span>
-          <button id="button-id-7" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+          <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$28.00</span>
+          <button id="button-id-7" class="button button1"><p style="margin-top: -4px">See Now</p></button>
         </div>
       </div>
       <div class="content-product-8">
         <img class="product-img" src="https://b-f7-zpcloud.zdn.vn/3728630182185988063/920dad3e9a1943471a08.jpg" width="150px" height="220px" alt="">
-        <h5>Experience</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Experience</h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -190,9 +192,9 @@
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-          <span class="shop-price">£22.00</span>
-          <button id="button-id-8" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+          <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$24.00</span>
+          <button id="button-id-8" class="button button1"><p style="margin-top: -4px">See Now</p></button>
         </div>
       </div>
 
@@ -200,7 +202,7 @@
 
       <div class="content-product-9">
         <img class="product-img" src="https://b-f8-zpcloud.zdn.vn/536054277779655177/17e6bed389f450aa09e5.jpg" width="150px" height="220px" alt="">
-        <h5>Making Progress</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Making Progress</h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
         <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -210,14 +212,14 @@
         <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-        <span class="shop-price">£20.00</span>
-        <button id="button-id-9" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+        <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$27.00</span>
+        <button id="button-id-9" class="button button1"><p style="margin-top: -4px">See Now</p></button>
       </div>
       </div>
       <div class="content-product-10">
         <img class="product-img" src="https://b-f7-zpcloud.zdn.vn/5162310087047289885/7a43090e3e29e777be38.jpg" width="150px" height="220px" alt="">
-        <h5>Challen Aerobic</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Challen Aerobic</h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -227,14 +229,14 @@
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-          <span class="shop-price">£15.00</span>
-          <button id="button-id-10" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+          <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$15.00</span>
+          <button id="button-id-10" class="button button1"><p style="margin-top: -4px">See Now</p></button>
         </div>
       </div>
       <div class="content-product-11">
         <img class="product-img" src="https://b-f8-zpcloud.zdn.vn/900577350658807743/049d2bd21cf5c5ab9ce4.jpg" width="150px" height="220px" alt="">
-        <h5>Aerobic Now</h5>
+        <h5 style="font-family: 'Catamaran', sans-serif;">Aerobic Now</h5>
         <p style="visibility: hidden">khoangcach</p>
         <div class="star">
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" alt="rate-image">
@@ -244,83 +246,83 @@
           <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-sta.png" alt="rate-image">
         </div>
         <p style="color: #595959">__________________________</p>
-        <div class="price-button">
-          <span class="shop-price">£22.00</span>
-          <button id="button-id-11" class="button button1">Buy Now</button>
+        <div class="price-button" style="font-family: 'Catamaran', sans-serif;">
+          <span class="shop-price" style="font-family: 'Catamaran', sans-serif;">$22.00</span>
+          <button id="button-id-11" class="button button1"><p style="margin-top: -4px">See Now</p></button>
         </div>
       </div>
 
       <div class="numerical-order">
-        <button class="order-button">1</button>
-        <button class="order-button">2</button>
-        <button class="order-button">></button>
+        <button class="order-button" style="font-family: 'Catamaran', sans-serif;">1</button>
+        <a routerLink="/book-2" (click)="onactive()"><button class="order-button" style="font-family: 'Catamaran', sans-serif;">2</button></a>
+        <a routerLink="/book-2" (click)="onactive()"><button class="order-button" style="font-family: 'Catamaran', sans-serif;">></button></a>
       </div>
 
       <input type="range" id="temp" name="temp" list="tickmarks" />
-      <p style="word-spacing: 140px;font-weight: 700;">Price:40$   Price:100$</p>
+      <p style="word-spacing: 165px;font-weight: 700;font-family: 'Catamaran', sans-serif;">Price:10$   Price:40$</p>
 
       <p style="visibility: hidden">khoangcach</p>
       <p style="visibility: hidden">khoangcach</p>
 
-      <button class="button button1">Filter</button>
+      <button class="button button1" style="font-family: 'Catamaran', sans-serif;">Filter</button>
 
       <p style="visibility: hidden">khoangcach</p>
       <p style="visibility: hidden">khoangcach</p>
 
       <div class="categories">
-      <h4 class="main-filter">PRODUCT CATEGORIES</h4>
+      <h4 class="main-filter" style="font-family: 'Catamaran', sans-serif;">PRODUCT CATEGORIES</h4>
         <p style="visibility: hidden">khoangcach</p>
         <p style="visibility: hidden">khoangcach</p>
-      <a href="#">Books for newbies</a>
-        <p style="color: #595959">__________________________________</p>
+      <div class="cate-hover"><a routerLink="#" style="font-family: 'Catamaran', sans-serif;color: rgb(159,159,159);">Books for newbies</a></div>
+        <p style="color: rgb(159,159,159);">__________________________________</p>
         <p style="visibility: hidden">khoangcach</p>
-      <a href="#">Good books for health</a>
-        <p style="color: #595959">__________________________________</p>
+        <div class="cate-hover"><a routerLink="#" style="font-family: 'Catamaran', sans-serif;color: rgb(159,159,159);">Good books for health</a></div>
+        <p style="color: rgb(159,159,159);">__________________________________</p>
         <p style="visibility: hidden">khoangcach</p>
-      <a href="#">Gym book</a>
-        <p style="color: #595959">__________________________________</p>
+        <div class="cate-hover"><a routerLink="#" style="font-family: 'Catamaran', sans-serif;color: rgb(159,159,159);">Aerobic book</a></div>
+        <p style="color: rgb(159,159,159)">__________________________________</p>
         <p style="visibility: hidden">khoangcach</p>
-      <a href="#">Advanced book</a>
-        <p style="color: #595959">__________________________________</p>
+        <div class="cate-hover"><a routerLink="#" style="font-family: 'Catamaran', sans-serif;color: rgb(159,159,159);">Advanced book</a></div>
+        <p style="color: rgb(159,159,159)">__________________________________</p>
         <p style="visibility: hidden">khoangcach</p>
-      <a href="#">Favorite books</a>
+        <div class="cate-hover"><a routerLink="#" style="font-family: 'Catamaran', sans-serif;color: rgb(159,159,159);">Favorite books</a></div>
         <p style="visibility: hidden">khoangcach</p>
         <p style="visibility: hidden">khoangcach</p>
 
-        <h4 class="main-filter">Accessory To Aerobic</h4>
+        <h4 class="main-filter" style="font-family: 'Catamaran', sans-serif;font-size: 20px;">Accessory To Aerobic</h4>
         <p style="visibility: hidden">khoangcach</p>
-        <a class="book-categories" href="#"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/Bloge-image/bloge-2.jpg" width="50px" height="50px" alt=""></a>
-        <div class="fitness-text"><h4 style="font-size: 20px;">Books for newbies</h4>
-        <p style="font-size: 15px;">Lorem ipsum dolor sit amet,</p><p style="font-size: 15px;padding-bottom: 10px;">consectetur</p>
-          <p style="word-spacing: 50px;">£20.00> <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"></p>
+        <a class="book-categories" href="#"><img src="https://bizweb.dktcdn.net/thumb/medium/100/286/754/products/5003817gach-yoga-reebok-re-40025-jpeg.jpg?v=1514948600967" width="50px" height="50px" alt=""></a>
+        <div class="fitness-text" style="font-family: 'Catamaran', sans-serif;"><h4 style="font-size: 18px;color: rgb(253,61,11);">AEROBIC BRICK</h4>
+        <p style="font-size: 15px;width: 200px;">Aerobic exercise bricks are made of material.</p>
+          <p style="word-spacing: 50px;">$20.00 <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"></p>
         </div>
         <p style="color: #595959">__________________________________</p>
         <p style="visibility: hidden">khoangcach</p>
-        <a class="book-categories" href="#"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/bloge-2jpg.jpg" width="50px" height="50px" alt=""></a>
-        <div class="fitness-text"><h4 style="font-size: 20px;">Books for newbies</h4>
-          <p style="font-size: 15px;">Lorem ipsum dolor sit amet,</p><p style="font-size: 15px;padding-bottom: 10px;">consectetur</p>
-          <p style="word-spacing: 50px;">£20.00> <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"></p>
+        <a class="book-categories" href="#"><img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/286/754/products/3011846buc-the-luc-min-re-11153-jpeg.jpg?v=1514947891463" width="50px" height="50px" alt=""></a>
+        <div class="fitness-text" style="font-family: 'Catamaran', sans-serif;"><h4 style="font-size: 20px;color: rgb(253,61,11);">AEROBIC POOL</h4>
+          <p style="font-size: 15px;width: 200px;">Convenient for carrying and storing and easy to practice.</p>
+          <p style="word-spacing: 50px;">$25.00 <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"></p>
         </div>
         <p style="color: #595959">__________________________________</p>
         <p style="visibility: hidden">khoangcach</p>
-        <a class="book-categories" href="#"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/bloge-5.jpg" width="50px" height="50px" alt=""></a>
-        <div class="fitness-text"><h4 style="font-size: 20px;">Books for newbies</h4>
-          <p style="font-size: 15px;">Lorem ipsum dolor sit amet,</p><p style="font-size: 15px;padding-bottom: 10px;">consectetur</p>
-          <p style="word-spacing: 50px;">£20.00> <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"></p>
+        <a class="book-categories" href="#"><img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/286/754/products/0255058buc-the-luc-da-nang-re-40-jpeg.jpg?v=1514947887777" width="50px" height="50px" alt=""></a>
+        <div class="fitness-text" style="font-family: 'Catamaran', sans-serif;"><h4 style="font-size: 20px;color: rgb(253,61,11);">FITNESS POLY</h4>
+          <p style="font-size: 15px;width: 200px;">Functions as a weight bench, or exercise platform.</p>
+          <p style="word-spacing: 50px;">$32.00 <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"></p>
         </div>
         <p style="color: #595959">__________________________________</p>
         <p style="visibility: hidden">khoangcach</p>
-        <a class="book-categories" href="#"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/bloge-3.jpg" width="50px" height="50px" alt=""></a>
-        <div class="fitness-text"><h4 style="font-size: 20px;">Books for newbies</h4>
-          <p style="font-size: 15px;">Lorem ipsum dolor sit amet,</p><p style="font-size: 15px;padding-bottom: 10px;">consectetur</p>
-          <p style="word-spacing: 50px;">£20.00> <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"></p>
+        <a class="book-categories" href="#"><img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/286/754/products/2036075bo-3-day-dan-hoi-ratb-40034-jpeg.jpg?v=1514947113760" width="50px" height="50px" alt=""></a>
+        <div class="fitness-text" style="font-family: 'Catamaran', sans-serif;"><h4 style="font-size: 20px;color: rgb(253,61,11);">ELECTRONIC STRAP</h4>
+          <p style="font-size: 15px;width: 200px;">Set of 3-color handlebars suitable for bodybuilding.</p>
+          <p style="word-spacing: 50px;">$28.00 <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"></p>
         </div>
         <p style="color: #595959">__________________________________</p>
         <p style="visibility: hidden">khoangcach</p>
-        <a class="book-categories" href="#"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/bloge-4.jpg" width="50px" height="50px" alt=""></a>
-        <div class="fitness-text"><h4 style="font-size: 20px;">Books for newbies</h4>
-          <p style="font-size: 15px;">Lorem ipsum dolor sit amet,</p><p style="font-size: 15px;padding-bottom: 10px;">consectetur</p>
-          <p style="word-spacing: 50px;">£20.00> <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"></p>
+        <a class="book-categories" href="#"><img src="https://media.bizwebmedia.net/Sites/37516/Data/upload/2014/7/san-nhun-RAP-11036CY.jpg" width="50px" height="50px" alt=""></a>
+        <div class="fitness-text" style="font-family: 'Catamaran', sans-serif;"><h4 style="font-size: 20px;color: rgb(253,61,11);">FLOOR FLOOR</h4>
+          <p style="font-size: 15px;width: 200px;">Flat surface, washable. High quality spring system.</p>
+          <p style="word-spacing: 50px;">$35.00 <img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"><img src="https://www.themechampion.com/templates/fitaza_html_landing_page/theme/images/blog/yellow-star.png" width="15px" height="15px"></p>
         </div>
         <p style="color: #595959">__________________________________</p>
 
@@ -329,56 +331,65 @@
     <footer>
       <div class="row">
         <div class="col">
-          <img src="https://yogisanonymous.com/assets/img/yogisanonymous.svg" class="footer-logo" alt="">
-          <p style="font-size: 20px;word-spacing: 5px;">
-            Subscribe Easy Tutorials Youtube channel to watch more videos on website
-            development and Press the bell icon to get immediate notification of latest videos
-          </p>
+          <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317007180_546482750284382_6161932256266949373_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=BUcrYwuop1kAX-tIfgf&_nc_ht=scontent.fhan18-1.fna&oh=03_AdSpxTHQaLCWKayX2Ip9GbwlM7tF8RrMLi7--yFkaEga4g&oe=63AF88D8" class="footer-logo" alt="">
+          <p style="padding-left: 15px;">
+            <img src="https://shivaaythemes.in/fithub-demo/assets/images/clock-2.png">
+            <p style="font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: -35px;margin-left: 65px;">Monday - Friday</p>
+            <p style="color: rgb(163,171,179);font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 0px;margin-left: 65px;">7:00Am - 10:00Pm</p>
+
+            <p style="font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 20px;margin-left: 65px;">Saturday - Sunday</p>
+            <p style="color: rgb(163,171,179);font-size: 15px;font-family: 'Catamaran', sans-serif;display: block;margin-top: 0px;margin-left: 65px;">7:00Am - 2:00Pm</p>
         </div>
         <div class="col" style="font-size: 15px;">
-          <h3 style="font-size: 20px;">Office <div class="underline"><span class="footer-span"></span></div></h3>
-          <p>ITPL Road</p>
-          <p>Ha Noi, Bangalore</p>
-          <p>Karnataka, PIN 100000, VietNam</p>
-          <p class="email-id">benbeck@yahoo.com</p>
-          <h4>+84 - 123456789</h4>
+          <h3 style="font-size: 25px;font-weight: bold;">Office <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
+          <a href="https://www.google.com/maps/place/8+T%C3%B4n+Th%E1%BA%A5t+Thuy%E1%BA%BFt,+M%E1%BB%B9+%C4%90%C3%ACnh,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0288058,105.7804978,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab4cd0c66f05:0xea31563511af2e54!8m2!3d21.0288058!4d105.7826865"><div class="col-img"><i style="color: white;" class="fa-solid fa-location-dot"></i></div></a>
+          <div class="col-img"><i style="color: white;margin-top: 25px" class="fa-regular fa-envelope"></i></div>
+          <div class="col-img"><i style="color: white;margin-top: 25px" class="fa-solid fa-phone"></i></div>
+          <div class="col-p">
+            <p >So 8, TonThatThuyet</p>
+          <p>Ha Noi, Viet Nam</p>
+            <p class="email-id">info@ygmail.com</p>
+          <p class="email-id" style="margin-top: -18px;">aerobicfighter@ygmail.com</p>
+          </div>
+          <h4 style="color: rgb(157,165,173);font-size: 15px;padding-left: 48px;">1800-121-3637</h4>
+          <h4 style="color: rgb(157,165,173);font-size: 15px;padding-left: 48px;">+84 0981578920</h4>
         </div>
         <div class="col" style="font-size: 15px;">
-          <h3  style="font-size: 20px;">Links <div class="underline"><span class="footer-span"></span></div></h3>
+          <h3  style="font-size: 25px;font-weight: bold;">Links <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
           <ul class="footer-ul">
-            <li class="footer-li"><a href="" class="footer-a">Home</a></li>
-            <li class="footer-li"><a href="" class="footer-a">Classes</a></li>
-            <li class="footer-li"><a href="" class="footer-a">Teachers</a></li>
-            <li class="footer-li"><a href="" class="footer-a">Book</a></li>
-            <li class="footer-li"><a href="" class="footer-a">Course</a></li>
+            <li class="footer-li"><a routerLink="/home" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Home</a></li>
+            <li class="footer-li"><a routerLink="/class" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Classes</a></li>
+            <li class="footer-li"><a routerLink="/teacher" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Teachers</a></li>
+            <li class="footer-li"><a routerLink="/book" (click)="onactive()" class="footer-a" style="color: rgb(252,60,8);">Book</a></li>
+            <li class="footer-li"><a routerLink="/course" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Course</a></li>
           </ul>
         </div>
-        <div class="col" style="font-size: 20px;">
-          <h3>NewsLetter <div class="underline"><span class="footer-span"></span></div></h3>
+        <div class="col" style="font-size: 15px;font-weight: bold;">
+          <h3>NewsLetter <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
           <form class="footer-form">
             <i class="fa-regular fa-envelope"></i>
             <input type="email" class="footer-input" placeholder="Enter your email id" required>
             <button type="submit" class="footer-button"><i class="fas fa-arrow-right"></i></button>
           </form>
           <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-pinterest"></i>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
           </div>
         </div>
       </div>
       <hr style="width: 100%;">
-      <p class="copyright"  style="font-size: 20px;">Easy Tutorials © 2022 - All Rights Reserved</p>
+      <p class="copyright"  style="font-size: 20px;margin-left: -50px;">Easy Tutorials © 2022<span style="color: rgb(253,61,11);"> Aerobic Fighter</span> - All Rights Reserved</p>
     </footer>
 
   </div>
-</div>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/1744f3f671.js"></script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap');
   *{
     padding: 0;
     margin: 0;
@@ -399,7 +410,6 @@
     max-width: 1140px;
   }
   body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
     background-color: #fff;
   }
@@ -561,6 +571,7 @@
     justify-content: flex-end;
   }
   ul#main-menu a{
+    font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
     padding: 10px 20px;
     /*color: #1fa3dd;*/
@@ -581,13 +592,47 @@
   }
   #banner img#tenta{
     width: 1450px;
-    height: 650px;
+    height: 760px;
   }
-  .book{
-    text-align: center;
+  .title-class{
+    font-family: 'Catamaran', sans-serif;
     position: absolute;
-    top: 40%;
-    left: 45%;
+    top: 45%;
+    left: 14%;
+    display: flex;
+    animation: textFly 3s forwards;
+  }
+  .h1-title {
+    font-size: 80px;
+    color:  white;
+    font-weight: 900;
+    line-height: 90px;
+    font-family: 'Catamaran', sans-serif;
+  }
+  @keyframes  textFly {
+    from {
+      top: 40%;
+      opacity: 0;
+    }
+    to {
+      top: 45%;
+      opacity: 1;
+    }
+  }
+  .button-class{
+    margin-top: 100px;
+    margin-left: -185px;
+    width: 180px;
+    height: 45px;
+    border: 1px solid rgb(253,61,11);
+    border-radius: 10px;
+    background: rgb(253,61,11);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    color:  white;
   }
   .table-of-content{
     top: 100px;
@@ -617,12 +662,12 @@
     cursor: pointer;
   }
   .button1 {
-    background-color: rgb(14,17,47);
-    color: white;
-    border: 2px solid rgb(14,17,47);
+    background-color: white;
+    color: rgb(253,61,11);
+    border: 2px solid rgb(253,61,11);
   }
   .button1:hover {
-    background-color: rgb(34,125,186);
+    background-color: rgb(253,61,11);
     color: white;
   }
   .categories a{
@@ -636,8 +681,8 @@
     font-weight: 300;
   }
   .book-categories{
-    padding-top:15px;
-    padding-left: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
     border: 1px solid #595959;
     width: 65px;
     height: 65px;
@@ -985,31 +1030,40 @@
     left: 50%;
   }
   .order-button{
-    padding: 10px;
-    color: white;
+    margin: 5px;
+    padding: 0px;
+    color: rgb(245,60,12);
     font-family: 'Poppins', sans-serif;
-    border: 1px solid black;
+    border: 2px solid rgb(245,60,12);
     width: 40px;
     height: 40px;
-    background-color: rgb(14,17,47);
+    background-color: white;
     border-radius: 20px;
     cursor: pointer;
+    font-weight: bold;
   }
   .order-button:hover{
-    background-color: rgb(34,125,186);
+    background-color: rgb(253,61,11);
+    color: white;
+  }
+  .cate-hover:hover a{
+      margin-left: 10px;
+  }
+  .fitness-text:hover h4{
+    margin-left: 5px;
   }
 
   footer{
+    font-family: 'Catamaran', sans-serif;
     width: 1600px;
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
     padding: 100px 0 30px;
-    font-family: 'poppins', sans-serif;
     font-size: 13px;
     line-height: 20px;
     position: relative;
     top: 670px;
-    font-family: 'Montserrat', sans-serif;
+    left: -20px;
   }
   footer .row{
     width: 85%;
@@ -1056,6 +1110,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
+    width: 300px;
     margin-bottom: 50px;
   }
   .footer-form .fa-regular{
@@ -1086,8 +1141,8 @@
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    color: #000;
-    background: #fff;
+    color: white;
+    background: rgb(253,61,11);
     margin-right: 15px;
     cursor: pointer;
   }
@@ -1132,6 +1187,23 @@
     footer{
       bottom: unset;
     }
+  }
+  .col-img i{
+    border: 1px solid rgb(253,61,11);
+    border-radius: 50%;
+    background-color: rgb(253,61,11);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  .col-p{
+    color: rgb(157,165,173);
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: -155px;
+    font-family: 'Catamaran', sans-serif;
   }
 </style>
 
