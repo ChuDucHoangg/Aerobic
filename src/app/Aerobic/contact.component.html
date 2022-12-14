@@ -1,16 +1,16 @@
 <div id="wrapper">
   <header>
     <div class="inner-header container">
-      <a routerLink="/home" id="logo">
+      <a routerLink="/home" (click)="onactive()" id="logo">
         <img class="imglogo" src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317007180_546482750284382_6161932256266949373_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=BUcrYwuop1kAX-tIfgf&_nc_ht=scontent.fhan18-1.fna&oh=03_AdSpxTHQaLCWKayX2Ip9GbwlM7tF8RrMLi7--yFkaEga4g&oe=63AF88D8" width="280px" height="80px" alt="">
       </a>
       <nav>
         <ul id="main-menu">
-          <li><a routerLink="/class">New Classes</a></li>
-          <li><a routerLink="/teacher">Teachers</a></li>
-          <li><a routerLink="/book">Book</a></li>
-          <li><a routerLink="/course">Course</a></li>
-          <li><a routerLink="/contact" style="color: rgb(253,61,11)">Contact</a></li>
+          <li><a routerLink="/class" (click)="onactive()">New Classes</a></li>
+          <li><a routerLink="/teacher" (click)="onactive()">Teachers</a></li>
+          <li><a routerLink="/book" (click)="onactive()">Book</a></li>
+          <li><a routerLink="/course" (click)="onactive()">Course</a></li>
+          <li><a routerLink="/contact" (click)="onactive()" style="color: rgb(253,61,11)">Contact</a></li>
         </ul>
 
       </nav>
@@ -32,7 +32,7 @@
 
     <div class="title-class">
       <h1 class="h1-title">Contact Us</h1>
-      <button class="button-class" style="font-family: 'Catamaran', sans-serif;"><a routerLink="/home" style="color: white;">Home</a> > <a routerLink="/contact" style="color: white">Contact</a></button>
+      <button class="button-class" style="font-family: 'Catamaran', sans-serif;"><a routerLink="/home" (click)="onactive()"  style="color: white;">Home</a> > <a routerLink="/contact" (click)="onactive()" style="color: white">Contact</a></button>
     </div>
 
     <div class="contact-reviewer">
@@ -79,7 +79,7 @@
             <label>Phone Number</label>
           </div>
           <div class="user-box">
-            <input style="height: 150px;" type="password" name="" required="">
+            <input style="height: 150px;" type="text" name="" required="">
             <label>Introduce Yourself...</label>
           </div>
           <button class="table-plan-button-submit" style="margin-left: 6%"> SUBMIT NOW
@@ -119,11 +119,11 @@
         <div class="col" style="font-size: 15px;text-align: left">
           <h3  style="font-size: 25px;font-weight: bold;">Links <div style="margin-top:10px;" class="underline"><span class="footer-span"></span></div></h3>
           <ul class="footer-ul">
-            <li class="footer-li"><a routerLink="/home" class="footer-a" style="color: rgb(157,165,173)">Home</a></li>
-            <li class="footer-li"><a routerLink="/class" class="footer-a" style="color: rgb(157,165,173)">Classes</a></li>
-            <li class="footer-li"><a routerLink="/teacher" class="footer-a" style="color: rgb(157,165,173)">Teachers</a></li>
-            <li class="footer-li"><a routerLink="/book" class="footer-a" style="color: rgb(157,165,173);">Book</a></li>
-            <li class="footer-li"><a routerLink="/course" class="footer-a" style="color: rgb(157,165,173)">Course</a></li>
+            <li class="footer-li"><a routerLink="/home" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Home</a></li>
+            <li class="footer-li"><a routerLink="/class"  (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Classes</a></li>
+            <li class="footer-li"><a routerLink="/teacher" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Teachers</a></li>
+            <li class="footer-li"><a routerLink="/book" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173);">Book</a></li>
+            <li class="footer-li"><a routerLink="/course" (click)="onactive()" class="footer-a" style="color: rgb(157,165,173)">Course</a></li>
           </ul>
         </div>
         <div class="col" style="font-size: 15px;font-weight: bold;">

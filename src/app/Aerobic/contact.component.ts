@@ -4,5 +4,7 @@ import {Component} from "@angular/core";
   templateUrl:'contact.component.html'
 })
 export  class ContactComponent{
-
+  onactive() {
+    window.scroll(0,0)
+  }
 }
